@@ -1,0 +1,323 @@
+
+@media (min-width:550px) and (max-width:799px){
+    //global
+
+    //header
+    .navMenu{
+        display: none !important;
+    }
+    .hamburguer{
+        display: flex !important;
+    }
+    .calendaryHeader{
+        display: none !important;
+    }
+    .favsHeader{
+        display: none !important;
+    }
+    
+    .userLoged{
+        display: none !important;
+
+    }
+    //hero
+    .hero{
+        div{
+            width: 70vw;
+        }
+    }
+    //packs
+    .backgroundsPack{
+        flex-direction: column !important;
+        h3{
+            display: none !important;
+        }
+        #background1Spain{
+            width: 100% !important;
+        }
+        #background2Spain{
+            width: 100% !important;
+
+        }
+        #background3Spain{
+            width: 100% !important;
+
+        }
+        #background1USA{
+            width: 100% !important;
+
+        }
+        #background2USA{
+            width: 100% !important;
+
+        }
+        #background3USA{
+            width: 100% !important;
+
+        }
+        #background1Asia{
+            width: 100% !important;
+
+        }
+        #background2Asia{
+            width: 100% !important;
+
+        }
+        #background3Asia{
+            width: 100% !important;
+
+        }
+    }
+    .titlePack{
+        width: 80% !important;
+        h1{
+            font-size: 50px !important;
+        }
+    }    
+    .blockPack{
+        width: 70% !important;
+        p{
+            width: 85% !important;
+        }
+    }
+    //review{
+        .cardReview{
+            border-radius: 25px;
+            flex-direction: column !important;
+            width: 80% !important;
+            p{
+                font-size: 16px !important;
+                margin-top: 10px;
+            }
+            .photoReview{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+                h3{
+                    color: $primaryColor;
+                    font-size: 22px;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                }
+                
+            }
+            .nameReviewMobile{
+                display: block !important;
+            }
+            .nameReview{
+                display: none;
+            }
+        }
+        //footer
+        .footerContainer{
+            flex-direction: column;
+            div{
+                min-width: 220px;
+                width: 100% !important;
+            }
+            .socialFooter{
+                margin-block: 30px;
+            }
+        }
+        //modal favorites
+        .modal{
+            width: 100vw !important;
+            border-radius: 0px !important;
+            padding: 20px !important;
+            border: none !important;
+            box-shadow: $primaryColor 0px 0px 3px 3px !important;
+            .closeModalContainer{
+                button{
+                    margin-bottom: 10px !important;
+                }
+                img{
+                    width: 40px !important;
+                }
+            }
+            .textModal{
+                h2{
+                    font-size: 26px !important;
+                }
+            }
+            .addFavoritesModal{
+                p{
+                    font-size: 14px !important;
+                }
+                img{
+                    width: 18px !important;
+                }
+            }
+        }
+        .favOption{
+            p{
+                font-size: 16px !important;
+            }
+            .buttonView{
+                font-size: 14px !important;
+                padding-inline: 25px !important;
+                padding-block: 4px !important;
+            }
+        }
+        //modalVM
+        .modalVIewMoreBackground{
+            height: auto !important;
+            min-height: 93% !important;
+            overflow-y: scroll !important;
+        }
+        .modalContent{
+            justify-items: center;
+        }
+        .modalViewMore{
+            overflow-y: scroll !important;
+            padding-bottom: 40px ;
+        }
+        .containerData{
+            flex-direction: column ;
+            width: 90vw !important;
+            height: auto !important;
+            align-items: center;
+            .containerSlider{
+                width: 100% !important;
+                
+            }
+        }
+        .priceOption{
+            width: 90vw !important;
+            height: 150px !important;
+            margin-block: 10px;
+        }
+        //reserve1
+        .reserve1{
+            flex-direction: column ;
+            justify-content: flex-start;
+            // padding-top: 100px;
+            overflow-y: scroll;
+            height: auto !important;
+            min-height: 100%;
+            .containerReserve1{
+                width: 80%;
+                height: 70vh;
+                align-content: center;
+            }
+            .imageReserve1{
+                width: 100% !important;
+                height: 30vh !important;
+                button{
+                    top: 0 !important;
+                    margin-bottom: 35% !important;
+
+                }
+            }
+        }
+        //reserve 2
+        .reserve2Container{
+
+            width: 100% !important;
+            padding-inline: 0 !important;
+            padding-left: 7vw !important;
+            p{
+                margin-left: 0 !important;
+            }
+            label{
+
+                
+            }
+            div{
+
+            }
+        }
+        //fees
+        .reserve2FeesContainer{
+            width: 100% !important;
+            .amountFee{
+                width: 80% !important;
+                p{
+                    font-size: 16px !important;
+                }
+            }
+        }
+        //finishe res 
+        .reserve3{
+            flex-direction: column ;
+            justify-content: flex-start;
+            // padding-top: 100px;
+            overflow-y: scroll;
+            height: auto !important;
+            min-height: 100%;
+            .reserve3Container{
+                width: 100%;
+                height: 70vh;
+                align-content: center;
+                h3{
+                    font-size: 20px !important;
+
+                }
+                div{
+                    p{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+            .reserve3Image{
+                width: 100% !important;
+                height: 30vh !important;
+                button{
+                    top: 0 !important;
+                    margin-bottom: 35% !important;
+                }
+            }
+        }
+
+        //resfinished
+        .reserveFinished{
+            div{
+                width: 75vw;
+                h3{
+                    font-size: 20px !important;
+                }
+                p{
+                    font-size: 16px;
+                }
+                button{
+                    width: 50%;
+                }
+            }
+        }
+        //my res
+                //my Reserves
+                .myReserves{
+                    h3{
+                        font-size: 20px !important;
+                    }
+                }
+                #exitMyReserves{
+                    img{
+                        width: 60px;
+                    }
+                }
+            .reserves{
+                .optionReserve{
+                    width: 80vw !important;
+                    height: 13vh !important;
+                }
+                .destination{
+                    p{
+                        font-size: 14px !important;
+                    }  
+                }
+                .classReserve{
+                    p{
+                        font-size: 14px !important;
+                    }
+                }
+                .deaparture{
+                    p{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        
+}

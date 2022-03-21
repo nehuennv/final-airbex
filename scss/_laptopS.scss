@@ -1,0 +1,317 @@
+//1280px x 720px
+@media (min-width:1280px) and (max-width:1740px){
+    //global
+    p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    //header
+    .logo{
+        img{
+            height: 40px !important;
+        }
+    }
+    
+    .resAndFav{
+
+        button{
+
+            img{
+                width: 20px !important;
+            }
+        }
+        .userLoged{
+            img{
+                width: 30px !important;
+            }
+        }
+    }
+    .navMenuItem{
+        a{
+            font-size: 16px;
+        }
+    }
+    //loginModal
+    #logIn{
+        width: 40% !important;
+        h1{
+            font-size: 30px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+    #signUp{
+        width: 40% !important;
+        h1{
+            font-size: 30px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+
+    }
+
+
+    //main
+    #nameUser{
+        p{
+            font-size: 16px !important;
+        }
+    }
+    #titleHomeTravels{
+        h1{
+            font-size: 24px !important;
+        }
+    }
+    #titleHero{
+        font-size: 30px;
+    }
+    #textHero{
+        font-size: 18px;
+    }
+    #planeHero{
+        margin-top: 40px;
+        img{
+            width: 110px;
+        }
+    }
+    #cardSection{
+        max-width: 1000px;
+    }
+    .loader{
+        width: 60px;
+        height: 60px;
+    }
+    .meCard{
+        width: 270px !important;
+        height: 270px !important;
+        .cardName{
+            p{
+                font-size: 22px !important;
+            }
+        }
+        .cardPrice{
+            p{
+               font-size: 16px !important; 
+            }
+            button{
+                left: 53px !important;
+            }
+        }
+    }
+    .packsContainerTitle{
+        h1{
+            font-size: 24px !important; 
+        }
+    }
+    .modalPack{
+        div{
+            h3{
+                font-size: 20px !important;
+            }
+            h1{
+                font-size: 60px !important;
+            }
+        }
+    }
+    .blockPack{
+        p{
+            font-size: 16px !important;
+        }
+        button{
+            font-size: 16px !important;
+        }
+    }
+    .cardReview{
+        width: 70%;
+        h3{
+            font-size: 20px !important;
+        }
+        img{
+            width: 120px !important;
+            height: 120px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+    //modalVM
+    .exitModalView{
+        margin-block:20px !important ;
+        button{
+            img{
+                width: 45px !important;
+            }
+        }
+    }
+    .modalName{
+        p{
+            font-size: 24px !important;
+        }
+    }
+    .exitModalView{
+        width: 60% !important;
+    }
+    .prices{
+        width: 60% !important;
+        button{
+            font-size: 14px !important;
+        }
+        h1{
+            font-size: 26px !important;
+        }
+        .classFlight{
+            p{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 16px;
+
+            }
+        }
+    }
+    //reserve1
+    .reserve1{
+        width: 100vw !important;
+        #buttonSubmitReserve1{
+            top: 30% !important;
+            font-size: 16px !important;
+            img{
+                width: 20px;
+            }
+        }
+    }
+    .titleReserve1{
+        font-size: 20px !important;
+    }
+    input{
+        font-size: 14px !important;
+    }
+    select{
+        font-size: 14px !important;
+    }
+    //reserve2
+    .reserve2Container{
+        width: 50% !important;
+        .titleReserve2{
+            font-size: 20px !important;
+
+        }
+    }
+    #submitPayment{
+        top: 30% !important;
+        font-size: 16px !important;
+        img{
+            width: 20px;
+        }
+    }
+    //reserve Fees
+    .reserve2FeesContainer{
+        width: 50% !important;
+    }
+    .titleReserve2Fees{
+        font-size: 20px !important;
+    }
+    .amountFee{
+        width: 80% !important;
+    }
+    .fees{
+        p{
+            font-size: 16px;
+
+        }
+        h1{
+            font-size: 22px;
+        }
+    }
+    //confirm reserve
+    #finishReserve{
+        font-size: 16px !important;
+    }
+    .facturation{
+        h3{
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+    }
+    .reserveFinished{
+        h3{
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        button{
+            font-size: 16px !important;
+            width: 35% !important;
+        }
+    }
+    //footer
+    footer{
+        p{
+            font-size:  14px !important;
+        }
+        h3{
+            font-size: 28px !important;
+        }
+        button{
+            font-size: 16px !important;
+        }
+        .socialFooter{
+            a{
+                img{
+                    width: 170px !important;
+                }
+            }
+            ul{
+                li{
+                    a{
+                        img{
+                            width: 45px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #endPage{
+        p{
+            font-size: 16px !important;
+        }
+    }
+    //my Reserves
+    .myReserves{
+        h3{
+            font-size: 20px !important;
+        }
+    }
+    #exitMyReserves{
+        img{
+            width: 60px;
+        }
+    }
+.reserves{
+    .optionReserve{
+        width: 40vw !important;
+        height: 13vh !important;
+    }
+    .destination{
+        p{
+            font-size: 14px !important;
+        }  
+    }
+    .classReserve{
+        p{
+            font-size: 14px !important;
+        }
+    }
+    .deaparture{
+        p{
+            font-size: 14px !important;
+        }
+    }
+}
+}

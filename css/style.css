@@ -1,0 +1,2934 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'Renogare';
+  src: url("../assets/fonts/Renogare-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Quantify';
+  src: url(../assets/fonts/Quantify.ttf);
+  font-style: normal;
+  font-weight: normal; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins';
+  height: 100%;
+  overflow-x: hidden; }
+  body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #3A4550; }
+  body::-webkit-scrollbar-thumb {
+    background: #00FFC2;
+    transition: all .5s; }
+    body::-webkit-scrollbar-thumb {
+      transition: all 1s; }
+  body p {
+    font-size: 18px;
+    margin-bottom: 0; }
+  body a {
+    color: #fff;
+    text-decoration: none; }
+  body main {
+    background-color: #14181b;
+    margin-top: 80px;
+    min-height: 92vh; }
+  body footer {
+    background-color: #14181b; }
+  body .navbar {
+    background-color: #14181b; }
+
+.header {
+  background-color: #14181b;
+  transition: all 1.5s;
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  display: grid;
+  left: 0;
+  align-content: center;
+  align-items: center;
+  z-index: 110; }
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 35px; }
+    .header .nav .resAndFav {
+      width: 157px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: flex-end; }
+      .header .nav .resAndFav .hamburguer {
+        top: 30px;
+        transform: scale(0.5);
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: none; }
+        .header .nav .resAndFav .hamburguer span {
+          display: block;
+          width: 40px;
+          height: 3px;
+          background-color: white;
+          margin: 3px 0;
+          transition: all 0.3s ease; }
+          .header .nav .resAndFav .hamburguer span:first-child {
+            align-self: flex-start;
+            width: 25px; }
+          .header .nav .resAndFav .hamburguer span:nth-child(2) {
+            align-self: center; }
+          .header .nav .resAndFav .hamburguer span:last-child {
+            align-self: flex-end;
+            width: 25px; }
+        .header .nav .resAndFav .hamburguer:hover span:first-child, .header .nav .resAndFav .hamburguer:hover span:last-child {
+          width: 40px; }
+        .header .nav .resAndFav .hamburguer.active span {
+          transform-style: preserve-3D;
+          width: 40px; }
+          .header .nav .resAndFav .hamburguer.active span:first-child {
+            width: 20px;
+            transform: rotate(45deg) translate(9px, 3.5px);
+            transform-origin: top center; }
+          .header .nav .resAndFav .hamburguer.active span:nth-child(2) {
+            transform: rotate(-45deg); }
+          .header .nav .resAndFav .hamburguer.active span:last-child {
+            width: 20px;
+            transform: rotate(45deg) translate(-9px, -3.5px);
+            transform-origin: bottom center; }
+      .header .nav .resAndFav .userLoged {
+        display: none;
+        align-content: center;
+        align-items: center; }
+        .header .nav .resAndFav .userLoged img {
+          width: 40px; }
+      .header .nav .resAndFav button {
+        margin-inline: 10px;
+        display: grid;
+        align-content: center;
+        align-items: center;
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer; }
+        .header .nav .resAndFav button img {
+          width: 25px;
+          transition: all .5s; }
+          .header .nav .resAndFav button img:hover {
+            transform: scale(1.1); }
+    .header .nav .navMenu {
+      display: flex;
+      list-style: none;
+      align-items: center; }
+      .header .nav .navMenu .navMenuItem {
+        font-size: 18px;
+        margin-inline: 15px; }
+        .header .nav .navMenu .navMenuItem #activeNav {
+          font-weight: 500; }
+        .header .nav .navMenu .navMenuItem .inactiveNav {
+          opacity: 60%; }
+        .header .nav .navMenu .navMenuItem .navMenuLink {
+          transition: all .5s; }
+          .header .nav .navMenu .navMenuItem .navMenuLink:hover {
+            color: #00FFC2; }
+  .header .logo {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .header .logo img {
+      height: 50px;
+      width: auto; }
+
+.containerCards {
+  min-height: 45vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+#cardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  min-height: 50vh; }
+  #cardSection .meCard {
+    width: 300px;
+    height: 300px;
+    margin-inline: 20px;
+    margin-block: 55px;
+    transition: all .3s; }
+  #cardSection .cardName {
+    cursor: pointer;
+    color: #f3f3f3;
+    border-radius: 0px 30px 0px 0px;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition-property: transform;
+    transition: all .5s; }
+    #cardSection .cardName:hover {
+      box-shadow: inset 0px 2px 10px 2px rgba(0, 0, 0, 0.25); }
+    #cardSection .cardName p {
+      font-size: 26px;
+      transition: all .5s;
+      text-align: center;
+      font-weight: 300; }
+      #cardSection .cardName p::after {
+        content: '';
+        border-top: 3px solid #f3f3f3;
+        width: 100%;
+        border-radius: 7px;
+        position: absolute;
+        display: block;
+        transform: rotateY(90deg);
+        transition: transform 0.25s linear; }
+      #cardSection .cardName p:hover {
+        transform: scale(1); }
+        #cardSection .cardName p:hover::after {
+          transform: rotate(0deg); }
+  #cardSection strong {
+    font-weight: 500; }
+  #cardSection img {
+    position: relative; }
+
+.cardPrice {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #272e33;
+  border-radius: 0px 0px 0px 30px;
+  color: #f3f3f3;
+  padding: 20px;
+  transition: all 1s; }
+  .cardPrice p {
+    position: relative;
+    left: 15px;
+    cursor: default; }
+    .cardPrice p strong {
+      color: #00FFC2; }
+  .cardPrice button {
+    position: relative;
+    left: 65px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    transition: all .5s; }
+    .cardPrice button img {
+      transition: all .3s; }
+      .cardPrice button img:hover {
+        transform: scale(1.1); }
+
+.favoriteAdd {
+  background-image: url(../assets/svg/icons/heart_fill.svg) !important; }
+
+#titleHomeTravels {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin-top: 30px; }
+  #titleHomeTravels h1 {
+    color: #f3f3f3;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px; }
+
+#buttonViewMore {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%; }
+  #buttonViewMore a {
+    font-size: 18px;
+    transition: all .5s;
+    color: #f3f3f3;
+    margin-bottom: 60px; }
+    #buttonViewMore a:hover {
+      color: #00FFC2; }
+
+@keyframes fly {
+  0% {
+    transform: translateX(-10vw); }
+  50% {
+    transform: translateX(50vw); }
+  100% {
+    transform: translateX(100vw); } }
+
+#planeHero {
+  position: absolute;
+  z-index: 1;
+  animation-name: fly;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  margin-top: 80px;
+  animation-iteration-count: infinite;
+  opacity: 50%;
+  transition: all .5s; }
+  #planeHero:hover {
+    opacity: 100%; }
+  #planeHero img {
+    position: initial;
+    transition: all .5s; }
+    #planeHero img:hover {
+      transform: scale(1.2); }
+
+.hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/svg/icons/backgroundHero.svg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 91.2vh; }
+  .hero div {
+    color: #f3f3f3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 25vw;
+    margin-bottom: 80px;
+    z-index: 2; }
+    .hero div h1 {
+      font-weight: 400;
+      font-family: 'Renogare';
+      font-size: 36px;
+      text-align: center; }
+    .hero div p {
+      font-family: 'Poppins';
+      font-size: 24px;
+      text-align: center;
+      font-weight: 400;
+      opacity: 60%;
+      margin-block: 40px; }
+    .hero div button {
+      cursor: pointer;
+      border: none;
+      background-repeat: no-repeat;
+      font-family: 'Renogare';
+      background-color: #0BCC9F;
+      padding-block: 20px;
+      padding-inline: 40px;
+      font-weight: 400;
+      border-radius: 40px;
+      text-align: center;
+      color: #2C343D;
+      font-size: 18px;
+      transition: all .3s; }
+      .hero div button:hover {
+        background-color: #f3f3f3;
+        color: #159C7D; }
+
+.restHero {
+  background-image: url(../assets/svg/icons/rest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 89px;
+  position: relative;
+  bottom: 2px;
+  z-index: 1; }
+
+.userUnlock {
+  display: block !important; }
+
+.loader {
+  margin-top: 50px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: animate 0.5s linear infinite; }
+  .loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#01FFC2, #159C7D, #0E3F33); }
+    .loader span:nth-child(1) {
+      filter: blur(5px); }
+    .loader span:nth-child(2) {
+      filter: blur(10px); }
+    .loader span:nth-child(3) {
+      filter: blur(25px); }
+    .loader span:nth-child(4) {
+      filter: blur(50px); }
+  .loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #14181b;
+    border-radius: 50%; }
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.showFavorites {
+  background-image: url(../assets/svg/icons/heart_fill.svg); }
+
+.menuOffers {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+  .menuOffers .titleOffers {
+    width: 100%;
+    color: #f3f3f3;
+    text-align: center;
+    margin-top: 40px; }
+    .menuOffers .titleOffers h1 {
+      font-weight: 500;
+      font-size: 30px; }
+    .menuOffers .titleOffers p {
+      font-size: 22px;
+      font-weight: 400; }
+
+.menuContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #1a1e22;
+  color: #f3f3f3;
+  display: grid;
+  margin-left: 100%;
+  z-index: 108;
+  transition: all 1s ease 0s;
+  place-content: flex-start center;
+  padding-block: 30px;
+  justify-content: start;
+  padding-left: 10%; }
+  .menuContainer .userMobile {
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .menuContainer .userMobile img {
+      margin-right: 10px;
+      width: 50px; }
+    .menuContainer .userMobile button {
+      border: none;
+      background: transparent;
+      color: #00FFC2;
+      width: min-content;
+      font-size: 18px;
+      font-family: 'Poppins';
+      cursor: pointer;
+      width: auto; }
+    .menuContainer .userMobile p {
+      text-transform: capitalize;
+      display: none;
+      color: #00FFC2;
+      width: min-content; }
+  .menuContainer .menuMobile {
+    height: min-content; }
+    .menuContainer .menuMobile ul {
+      display: grid;
+      justify-items: start;
+      align-content: center;
+      justify-content: start;
+      align-items: center;
+      list-style: none; }
+      .menuContainer .menuMobile ul li {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-block: 15%; }
+        .menuContainer .menuMobile ul li a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Poppins';
+          color: #fff;
+          font-size: 18px;
+          text-align: start;
+          font-weight: 300; }
+          .menuContainer .menuMobile ul li a img {
+            margin-left: 15px;
+            width: 25px; }
+        .menuContainer .menuMobile ul li button {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: Transparent;
+          background-repeat: no-repeat;
+          border: none;
+          font-family: 'Poppins';
+          color: #fff;
+          font-size: 18px;
+          font-weight: 300;
+          text-align: start; }
+          .menuContainer .menuMobile ul li button img {
+            margin-left: 15px;
+            width: 25px; }
+
+.menuToggle {
+  transition: all .5s; }
+  .menuToggle .menu1 {
+    width: 10px;
+    background: #fff;
+    height: 2px;
+    margin-left: 10px;
+    border-radius: 20px; }
+  .menuToggle .menu2 {
+    width: 20px;
+    background: #fff;
+    height: 2px;
+    border-radius: 20px;
+    margin-block: 4px; }
+  .menuToggle .menu3 {
+    width: 10px;
+    background: #fff;
+    height: 2px;
+    border-radius: 20px; }
+
+.showMenu {
+  margin-left: 0%; }
+
+.hoverUser {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  transform: translateY(-200%);
+  justify-content: flex-end;
+  transition: all .5s;
+  z-index: 109; }
+  .hoverUser #nameUser {
+    color: #14181b;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    width: auto;
+    padding-inline: 25px;
+    padding-block: 10px;
+    box-shadow: 0px 0px 10px #01FFC2;
+    background-color: #00FFC2;
+    border-radius: 0px 0px 0px 10px; }
+
+.showHover {
+  transform: translateY(0%); }
+
+.showButtonMobile {
+  display: none; }
+
+.showNameMobile {
+  display: block !important; }
+
+.burger.burger-squeeze .burger-lines, .burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {
+  transition: .2s top .2s, .1s left, .2s transform, .4s background-color .2s; }
+
+.burger.burger-squeeze .burger-lines:after, .burger.burger-squeeze .burger-lines:before {
+  width: 2em; }
+
+.burger.burger-squeeze.open .burger-lines, .burger.burger-squeeze.open .burger-lines:after, .burger.burger-squeeze.open .burger-lines:before {
+  transition: .2s background-color, .2s top, .2s left, .2s transform .15s; }
+
+.burger.burger-squeeze.open .burger-lines {
+  background-color: transparent; }
+
+.burger.burger-squeeze.open .burger-lines:before, .burger.burger-squeeze.open .burger-lines:after {
+  left: 0.5em;
+  top: 0px; }
+
+.burger.burger-squeeze.open .burger-lines:before {
+  transform: rotate(-45deg); }
+
+.burger.burger-squeeze.open .burger-lines:after {
+  transform: rotate(45deg); }
+
+footer {
+  padding-block: 70px; }
+
+@keyframes hoverSocial {
+  0% {
+    transform: translate(0); }
+  10% {
+    transform: translate(-2px, -2px); }
+  20% {
+    transform: translate(2px, -2px); }
+  30% {
+    transform: translate(-2px, 2px); }
+  40% {
+    transform: translate(2px, 2px); }
+  50% {
+    transform: translate(-2px, -2px); }
+  60% {
+    transform: translate(2px, -2px); }
+  70% {
+    transform: translate(-2px, 2px); }
+  80% {
+    transform: translate(-2px, -2px); }
+  90% {
+    transform: translate(2px, -2px); }
+  100% {
+    transform: translate(0); } }
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3f3f3; }
+  .footerContainer .suscribeFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 33%; }
+    .footerContainer .suscribeFooter p {
+      text-align: center;
+      width: 70%; }
+      .footerContainer .suscribeFooter p strong {
+        font-weight: 400;
+        color: #00FFC2; }
+    .footerContainer .suscribeFooter #suscribeInput {
+      caret-color: #00FFC2;
+      border: none;
+      padding-block: 15px;
+      padding-inline: 40px;
+      border-radius: 30px;
+      margin-block: 15px;
+      transition: all .5s;
+      font-family: 'Poppins'; }
+      .footerContainer .suscribeFooter #suscribeInput:focus {
+        border: none;
+        outline: none;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px 2px #00FFC2;
+        border: 0; }
+    .footerContainer .suscribeFooter #suscribeButton {
+      background-color: #00FFC2;
+      color: #14181b;
+      background-repeat: no-repeat;
+      border: none;
+      font-family: 'Poppins';
+      font-size: 18px;
+      padding-block: 10px;
+      padding-inline: 45px;
+      border-radius: 15px 0px 15px 0px;
+      font-weight: 600;
+      transition: all .5s; }
+      .footerContainer .suscribeFooter #suscribeButton:hover {
+        border-radius: 0px 15px 0px 15px;
+        cursor: pointer;
+        background-color: #f3f3f3;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .footerContainer .socialFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 33%; }
+    .footerContainer .socialFooter a img {
+      width: 200px; }
+    .footerContainer .socialFooter ul {
+      list-style: none;
+      display: flex; }
+      .footerContainer .socialFooter ul li {
+        padding-inline: 5px; }
+        .footerContainer .socialFooter ul li a img {
+          transition: all .5s;
+          width: 60px; }
+          .footerContainer .socialFooter ul li a img:hover {
+            animation: hoverSocial 2s ease 0s infinite normal forwards; }
+  .footerContainer .contactFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 33%; }
+    .footerContainer .contactFooter h3 {
+      color: #00FFC2;
+      font-size: 34px;
+      font-weight: 500; }
+    .footerContainer .contactFooter .contactOptions {
+      margin-block: 8px; }
+      .footerContainer .contactFooter .contactOptions p {
+        display: flex;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%; }
+        .footerContainer .contactFooter .contactOptions p img {
+          margin-right: 5px; }
+    .footerContainer .contactFooter p {
+      width: 75%;
+      text-align: center;
+      margin-block: 5px; }
+      .footerContainer .contactFooter p strong {
+        font-weight: 400;
+        color: #00FFC2; }
+
+#endPage {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #272E34; }
+  #endPage p {
+    font-weight: 300;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #fff; }
+
+.selectFlights {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#flightsContainer {
+  background-color: rgba(58, 69, 80, 0.2);
+  max-width: 1000px;
+  height: 120px;
+  width: 75%;
+  border-radius: 0px 0px 20px 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  #flightsContainer div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center; }
+    #flightsContainer div label {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding-inline: 40px; }
+      #flightsContainer div label p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: 'Poppins';
+        color: #00FFC2;
+        font-weight: 500;
+        font-size: 16px;
+        background: #3A4550;
+        border-radius: 5px 5px 0px 0px;
+        height: 40px;
+        width: 150%;
+        justify-content: center;
+        align-content: center; }
+      #flightsContainer div label #searchP img {
+        margin-left: 4px; }
+      #flightsContainer div label select {
+        height: 42px;
+        width: 150%;
+        margin-inline: 15px;
+        color: #f3f3f3;
+        background-color: #2C343D;
+        border: none;
+        border-radius: 0px 0px 17px 17px;
+        text-align: center;
+        font-family: 'Poppins'; }
+        #flightsContainer div label select:focus {
+          border: none;
+          box-shadow: 0px 0px 20px 0px #00FFC2; }
+      #flightsContainer div label input {
+        caret-color: #00FFC2;
+        height: 42px;
+        width: 150%;
+        color: #f3f3f3;
+        background-color: #2C343D;
+        border: none;
+        border-radius: 0px 0px 17px 17px;
+        text-align: center;
+        font-family: 'Poppins'; }
+        #flightsContainer div label input:focus {
+          border: none; }
+
+.openFavorites {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  font-family: 'Poppins';
+  color: #fff;
+  font-size: 18px; }
+  .openFavorites:hover {
+    transition: all .5s;
+    color: #00FFC2;
+    cursor: pointer; }
+
+.modalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  z-index: 99;
+  transition: all 1s;
+  transform: translateY(-100%); }
+  .modalContainer .modal {
+    background-color: #1A1E22;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 0px 60px 0px 60px;
+    border: #01FFC2 3px solid;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5);
+    padding-block: 40px;
+    transition: all 1s; }
+    .modalContainer .modal .closeModalContainer {
+      display: flex;
+      justify-content: center; }
+      .modalContainer .modal .closeModalContainer #closeModal {
+        background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 20px;
+        opacity: 50%;
+        transition: all .5s; }
+        .modalContainer .modal .closeModalContainer #closeModal:hover {
+          opacity: 100%; }
+        .modalContainer .modal .closeModalContainer #closeModal img {
+          width: 60px; }
+    .modalContainer .modal .textModal {
+      display: grid;
+      min-width: 100%;
+      justify-content: center;
+      align-items: center; }
+      .modalContainer .modal .textModal h2 {
+        font-family: 'Poppins';
+        text-transform: capitalize;
+        color: #00FFC2;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 30px; }
+    .modalContainer .modal .optionFavorite {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      justify-content: flex-start;
+      align-content: center;
+      overflow-y: scroll;
+      max-height: 55vh;
+      transition: all 1s; }
+      .modalContainer .modal .optionFavorite::-webkit-scrollbar {
+        width: 7px;
+        transition: all 1s; }
+      .modalContainer .modal .optionFavorite::-webkit-scrollbar-thumb {
+        background: #00FFC2;
+        border-radius: 10px;
+        transition: all 1s; }
+        .modalContainer .modal .optionFavorite::-webkit-scrollbar-thumb:hover {
+          background: #f3f3f3; }
+    .modalContainer .modal .favOption {
+      display: flex;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      width: 80%;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      align-items: center; }
+      .modalContainer .modal .favOption p {
+        font-family: 'Poppins';
+        font-weight: 400;
+        color: #f3f3f3;
+        margin-bottom: 15px; }
+        .modalContainer .modal .favOption p strong {
+          font-weight: 500; }
+      .modalContainer .modal .favOption .secOptFav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 15px; }
+        .modalContainer .modal .favOption .secOptFav .buttonView {
+          font-family: 'Poppins';
+          font-size: 16px;
+          border: solid 3px #00FFC2;
+          cursor: pointer;
+          border-radius: 100px;
+          transition: all .5s;
+          background-color: #00FFC2;
+          color: #3A4550;
+          font-weight: 600;
+          padding-inline: 35px;
+          padding-block: 7px; }
+          .modalContainer .modal .favOption .secOptFav .buttonView:hover {
+            color: #00FFC2;
+            background-color: transparent; }
+          .modalContainer .modal .favOption .secOptFav .buttonView:active {
+            color: #3A4550;
+            background-color: #f3f3f3;
+            filter: drop-shadow(0px 0px 7px #01FFC2); }
+        .modalContainer .modal .favOption .secOptFav .buttonDelete {
+          margin-left: 10px;
+          background-color: Transparent;
+          background-repeat: no-repeat;
+          border: none;
+          position: relative;
+          cursor: pointer;
+          top: 2px; }
+          .modalContainer .modal .favOption .secOptFav .buttonDelete img {
+            transition: all .2s; }
+            .modalContainer .modal .favOption .secOptFav .buttonDelete img:active {
+              filter: drop-shadow(0px 0px 7px #01FFC2); }
+  .modalContainer .addFavoritesModal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 23px;
+    padding-top: 10px; }
+    .modalContainer .addFavoritesModal p {
+      color: #f3f3f3;
+      font-size: 18px; }
+    .modalContainer .addFavoritesModal img {
+      width: 22px;
+      position: relative;
+      top: 1.5px;
+      margin-left: 3px; }
+
+.show {
+  transform: translateY(-10%); }
+
+.noScroll {
+  overflow: hidden;
+  transition: all 1s; }
+
+.floatDuplicate {
+  background: "#01FFC2";
+  color: "#3A4550"; }
+
+.liked {
+  background-image: url(../assets/svg/icons/heart_fill.svg); }
+
+.noLiked {
+  background-image: url(../assets/svg/icons/heart_outline.svg); }
+
+.modalViewMoreBackground {
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  width: 100vw;
+  height: 93%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  transform: translateY(-100%);
+  transition: all .5s; }
+  .modalViewMoreBackground .modalViewMore {
+    background-color: #272e33;
+    width: 100vw;
+    border-radius: 0px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .modalViewMoreBackground .modalViewMore .exitModalView {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-block: 30px; }
+      .modalViewMoreBackground .modalViewMore .exitModalView button {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer; }
+        .modalViewMoreBackground .modalViewMore .exitModalView button img {
+          width: 60px;
+          opacity: 50%;
+          transition: all .5s; }
+          .modalViewMoreBackground .modalViewMore .exitModalView button img:hover {
+            opacity: 100%; }
+    .modalViewMoreBackground .modalViewMore .modalContent {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      .modalViewMoreBackground .modalViewMore .modalContent .modalName {
+        color: #f3f3f3;
+        display: grid;
+        height: 6vh;
+        padding-inline: 20px;
+        align-items: flex-start; }
+        .modalViewMoreBackground .modalViewMore .modalContent .modalName p {
+          font-size: 30px;
+          font-weight: 400; }
+          .modalViewMoreBackground .modalViewMore .modalContent .modalName p strong {
+            font-weight: 600; }
+        .modalViewMoreBackground .modalViewMore .modalContent .modalName img {
+          height: 70vh;
+          width: auto; }
+    .modalViewMoreBackground .modalViewMore .containerData {
+      display: flex;
+      width: 60vw;
+      height: 70vh; }
+      .modalViewMoreBackground .modalViewMore .containerData .containerSlider {
+        width: 50%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative; }
+        .modalViewMoreBackground .modalViewMore .containerData .containerSlider .slider {
+          margin-left: -100%;
+          display: flex;
+          width: 400%;
+          height: 100%; }
+          .modalViewMoreBackground .modalViewMore .containerData .containerSlider .slider .sliderSection {
+            width: 100%; }
+            .modalViewMoreBackground .modalViewMore .containerData .containerSlider .slider .sliderSection .sliderImg {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+        .modalViewMoreBackground .modalViewMore .containerData .containerSlider .sliderBtn {
+          position: absolute;
+          top: 50%;
+          opacity: 50%;
+          transform: translateY(-50%);
+          transition: all .5s;
+          cursor: pointer; }
+          .modalViewMoreBackground .modalViewMore .containerData .containerSlider .sliderBtn:hover {
+            opacity: 100%; }
+        .modalViewMoreBackground .modalViewMore .containerData .containerSlider .sliderBtnRight {
+          right: 10px; }
+        .modalViewMoreBackground .modalViewMore .containerData .containerSlider .sliderBtnLeft {
+          left: 10px; }
+      .modalViewMoreBackground .modalViewMore .containerData .prices {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%; }
+        .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption {
+          display: flex;
+          width: 95%;
+          border-radius: 20px;
+          height: 22%;
+          background-color: #1A1E22;
+          align-items: center;
+          justify-content: center;
+          transition: all .5s; }
+          .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption:hover {
+            box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25); }
+          .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .classFlight {
+            width: 35%;
+            height: 60%;
+            display: grid;
+            justify-items: start;
+            border-right: 1px solid rgba(255, 255, 255, 0.5);
+            justify-content: center;
+            align-items: center;
+            align-content: center; }
+            .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .classFlight p {
+              color: #f3f3f3;
+              opacity: 50%; }
+            .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .classFlight h3 {
+              font-weight: 500;
+              color: #f3f3f3; }
+          .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .priceFlight {
+            width: 45%;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center; }
+            .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .priceFlight h1 {
+              font-size: 35px;
+              font-weight: 300;
+              font-family: 'Renogare';
+              color: #00FFC2; }
+            .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .priceFlight button {
+              font-weight: 500;
+              color: #1A1E22;
+              background-color: #f3f3f3;
+              border-radius: 30px;
+              font-family: 'Poppins';
+              border: solid 3px #f3f3f3;
+              font-size: 16px;
+              cursor: pointer;
+              padding-inline: 35%;
+              padding-block: 3%;
+              transition: all .5s; }
+              .modalViewMoreBackground .modalViewMore .containerData .prices .priceOption .priceFlight button:hover {
+                background-color: #1A1E22;
+                color: #f3f3f3; }
+
+.showModalVM {
+  transform: translateY(0%); }
+
+.loginContainer {
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 17, 17, 0.8);
+  transition: all 1s;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all .4s; }
+  .loginContainer #closeLogIn #butCloseLog {
+    background: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(2%) hue-rotate(290deg) brightness(115%) contrast(100%); }
+  .loginContainer #logIn {
+    background-image: url(../assets/img/background-contact-rose-6.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 65vh;
+    color: #f3f3f3;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px 0px 0px 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3); }
+    .loginContainer #logIn h1 {
+      font-family: 'Renogare';
+      font-weight: 100;
+      font-size: 36px;
+      padding-left: 12px; }
+
+.formLogIn button {
+  background-color: #f3f3f3;
+  color: #14181b;
+  background-repeat: no-repeat;
+  border: 3px solid #f3f3f3;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 500px;
+  padding-block: 17px;
+  font-family: 'Renogare';
+  font-weight: 100;
+  font-size: 18px;
+  margin-top: 12px;
+  transition: all .3s; }
+  .formLogIn button:hover {
+    background-color: transparent;
+    color: #f3f3f3;
+    border: 3px solid #f3f3f3; }
+
+.formLogIn label p {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  padding-left: 12px; }
+
+.formLogIn label input {
+  caret-color: #f3f3f3;
+  background: rgba(255, 255, 255, 0.26);
+  padding-block: 4%;
+  width: 90%;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding-inline: 20px;
+  font-family: 'Poppins';
+  color: #f3f3f3;
+  transition: all .5s; }
+  .formLogIn label input::-webkit-calendar-picker-indicator {
+    content: '';
+    display: block;
+    background: url(../assets/svg/icons/calendarReserve.svg) no-repeat;
+    cursor: pointer; }
+  .formLogIn label input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px 2px #f3f3f3;
+    border: 0; }
+  .formLogIn label input::-webkit-inner-spin-button, .formLogIn label input ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+#signUp {
+  background-color: #14181b;
+  width: 30%;
+  height: 65vh;
+  color: #f3f3f3;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  border-radius: 0px 30px 30px 0px; }
+  #signUp::-webkit-scrollbar {
+    width: 7px;
+    transition: all 1s;
+    margin-block: 10px; }
+  #signUp::-webkit-scrollbar-thumb {
+    background: #3A4550;
+    border-radius: 10px;
+    transition: all 1s; }
+    #signUp::-webkit-scrollbar-thumb:hover {
+      background: #f3f3f3; }
+  #signUp h1 {
+    padding-left: 12px;
+    font-family: 'Renogare';
+    font-weight: 100;
+    font-size: 36px; }
+  #signUp #checkboxSignUp {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 12px; }
+    #signUp #checkboxSignUp input {
+      caret-color: #00FFC2;
+      border-radius: 100px;
+      margin-bottom: 0px;
+      background-color: transparent;
+      border: 10px;
+      width: 4%; }
+    #signUp #checkboxSignUp p {
+      width: 95%; }
+  #signUp button {
+    background-color: transparent;
+    color: #f3f3f3;
+    border: 2px solid #f3f3f3;
+    margin-top: 0px;
+    transition: all .5s;
+    width: 50%;
+    white-space: nowrap; }
+    #signUp button:hover {
+      background-color: #f3f3f3;
+      color: #14181b; }
+
+.loginShow {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible; }
+
+.deleteButton {
+  display: none; }
+
+.reviews {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center; }
+  .reviews h1 {
+    color: #f3f3f3;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 60px;
+    margin-top: 20px; }
+
+.cardReview {
+  margin-bottom: 40px;
+  background-color: #272e33;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  border-radius: 200px;
+  padding: 25px;
+  transition: all .5s; }
+  .cardReview:hover {
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5); }
+  .cardReview .photoReview img {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px; }
+  .cardReview .photoReview .nameReviewMobile {
+    display: none; }
+  .cardReview .nameAndReview {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; }
+    .cardReview .nameAndReview h3 {
+      color: #00FFC2;
+      font-size: 26px;
+      font-family: 'Poppins';
+      font-weight: 600; }
+    .cardReview .nameAndReview p {
+      color: #f3f3f3;
+      font-size: 20px; }
+
+.endText {
+  font-size: 25px;
+  font-family: 'Poppins';
+  color: #f3f3f3;
+  font-weight: 500;
+  margin-top: 20px; }
+  .endText strong {
+    font-weight: 600;
+    color: #00FFC2; }
+
+.packsContainer .packsContainerTitle {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 60px; }
+  .packsContainer .packsContainerTitle h1 {
+    color: #f3f3f3;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 30px; }
+
+.packsContainer .modalPack {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 40px; }
+  .packsContainer .modalPack .backgroundsPack {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center; }
+    .packsContainer .modalPack .backgroundsPack #background1Spain {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/Madrid.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background1Spain h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background1Spain h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background2Spain {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/valencia.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background2Spain h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background2Spain h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background3Spain {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/barcelonapack.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background3Spain h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background3Spain h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background1USA {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/l.a.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background1USA h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background1USA h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background2USA {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/vegaspack.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background2USA h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background2USA h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background3USA {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/ny.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background3USA h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background3USA h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background1Asia {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/China.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background1Asia h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background1Asia h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background2Asia {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/Singapur.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background2Asia h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background2Asia h3:hover {
+          opacity: 100%; }
+    .packsContainer .modalPack .backgroundsPack #background3Asia {
+      height: 100%;
+      display: grid;
+      justify-content: center;
+      width: 33%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-image: url(../assets/img/Japon.jpg); }
+      .packsContainer .modalPack .backgroundsPack #background3Asia h3 {
+        font-weight: 500;
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: 'Poppins';
+        color: white;
+        opacity: 50%;
+        transition: all .5s;
+        cursor: default; }
+        .packsContainer .modalPack .backgroundsPack #background3Asia h3:hover {
+          opacity: 100%; }
+  .packsContainer .modalPack .contentPack {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%; }
+    .packsContainer .modalPack .contentPack .titlePack {
+      width: 45%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      border-bottom: 2px solid #fff; }
+      .packsContainer .modalPack .contentPack .titlePack h1 {
+        font-family: 'Renogare';
+        font-size: 80px;
+        font-weight: 400;
+        color: #f3f3f3;
+        text-align: center; }
+    .packsContainer .modalPack .contentPack .blockPack {
+      background-color: #14181b;
+      padding-block: 40px;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 0px 0px 20px 20px;
+      width: 40%;
+      transition: all .5s; }
+      .packsContainer .modalPack .contentPack .blockPack:hover {
+        background-color: rgba(26, 30, 34, 0.7); }
+      .packsContainer .modalPack .contentPack .blockPack p {
+        width: 70%;
+        color: #f3f3f3;
+        font-size: 18px; }
+      .packsContainer .modalPack .contentPack .blockPack .pricePack {
+        padding-block: 20px; }
+        .packsContainer .modalPack .contentPack .blockPack .pricePack strong {
+          font-family: 'Renogare';
+          font-weight: 400; }
+          .packsContainer .modalPack .contentPack .blockPack .pricePack strong strong {
+            color: #00FFC2; }
+      .packsContainer .modalPack .contentPack .blockPack button {
+        border: solid 3px #00FFC2;
+        background-color: #00FFC2;
+        background-repeat: no-repeat;
+        font-family: 'Renogare';
+        color: #14181b;
+        font-size: 18px;
+        padding-block: 12px;
+        padding-inline: 47px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all .3s; }
+        .packsContainer .modalPack .contentPack .blockPack button:hover {
+          background-color: transparent;
+          color: #00FFC2; }
+        .packsContainer .modalPack .contentPack .blockPack button:active {
+          color: #f3f3f3; }
+
+.separatorLine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .separatorLine div {
+    height: 1px;
+    width: 65vw;
+    max-width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px; }
+
+.myReserves {
+  color: #f3f3f3;
+  position: fixed;
+  background-image: url(../assets/img/reserve.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: auto;
+  transform: translateY(-200%);
+  z-index: 99;
+  box-shadow: 0px 4px 200px 150px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-block: 30px;
+  overflow-y: scroll;
+  max-height: 98vh;
+  transition: all 1s; }
+  .myReserves::-webkit-scrollbar {
+    width: 7px;
+    transition: all 1s; }
+  .myReserves::-webkit-scrollbar-thumb {
+    background: #f3f3f3;
+    border-radius: 10px;
+    transition: all 1s; }
+  .myReserves .exitMyReserves {
+    margin-bottom: 20px; }
+    .myReserves .exitMyReserves button {
+      transition: all .5s;
+      opacity: 50%;
+      cursor: pointer;
+      background: transparent;
+      border: none; }
+      .myReserves .exitMyReserves button:hover {
+        opacity: 100%; }
+  .myReserves h3 {
+    color: #f3f3f3;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px; }
+  .myReserves .reserves {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 30px; }
+    .myReserves .reserves .optionReserve {
+      width: 40vw;
+      height: 13vh;
+      background-color: #14181b;
+      border-radius: 11px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s; }
+      .myReserves .reserves .optionReserve:hover {
+        box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.35); }
+        .myReserves .reserves .optionReserve:hover p strong {
+          color: #00FFC2; }
+      .myReserves .reserves .optionReserve p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px; }
+        .myReserves .reserves .optionReserve p strong {
+          font-weight: 600;
+          transition: all .5s; }
+      .myReserves .reserves .optionReserve div {
+        width: 33%;
+        height: 70%;
+        display: grid;
+        justify-content: center;
+        align-items: center; }
+      .myReserves .reserves .optionReserve .classReserve {
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5); }
+
+.reserve1 {
+  color: #f3f3f3;
+  position: fixed;
+  background-color: #14181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: all .5s; }
+  .reserve1 .containerReserve1 {
+    position: relative;
+    bottom: 10%;
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    align-items: center; }
+    .reserve1 .containerReserve1 .titleReserve1 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 5px; }
+    .reserve1 .containerReserve1 .subtitleReserve1 {
+      opacity: 50%;
+      font-size: 16px;
+      margin-block: 20px; }
+    .reserve1 .containerReserve1 form label {
+      margin-block: 0px; }
+      .reserve1 .containerReserve1 form label p {
+        margin-bottom: 10px;
+        font-size: 16px; }
+      .reserve1 .containerReserve1 form label input {
+        margin-bottom: 20px;
+        background-color: #2C3033;
+        border: none;
+        color: #f3f3f3;
+        border-radius: 11px;
+        width: 85%;
+        font-size: 16px;
+        transition: all .5s;
+        padding-block: 20px;
+        font-family: 'Poppins';
+        padding-inline: 20px; }
+        .reserve1 .containerReserve1 form label input:focus {
+          border: none;
+          outline: none;
+          box-shadow: 0px 0px 2px 2px #00FFC2;
+          border: 0; }
+        .reserve1 .containerReserve1 form label input::-webkit-calendar-picker-indicator {
+          content: '';
+          display: block;
+          background: url(../assets/svg/icons/calendarReserve.svg) no-repeat;
+          cursor: pointer; }
+      .reserve1 .containerReserve1 form label .select {
+        display: flex; }
+        .reserve1 .containerReserve1 form label .select select {
+          background-color: #2C3033;
+          border: none;
+          color: #f3f3f3;
+          border-radius: 11px;
+          font-family: 'Poppins';
+          font-size: 16px;
+          width: 85%;
+          padding-block: 20px;
+          padding-inline: 20px;
+          appearance: none;
+          outline: none;
+          transition: all .5s; }
+          .reserve1 .containerReserve1 form label .select select:focus {
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 2px 2px #00FFC2;
+            border: 0; }
+        .reserve1 .containerReserve1 form label .select img {
+          position: inherit;
+          transform: translateX(-50px);
+          cursor: pointer;
+          width: 30px;
+          pointer-events: none; }
+  .reserve1 .imageReserve1 {
+    width: 30%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center; }
+    .reserve1 .imageReserve1 #buttonSubmitReserve1 {
+      font-family: 'Poppins';
+      font-weight: 500;
+      color: #14181b;
+      padding-inline: 50px;
+      padding-block: 20px;
+      border-radius: 35px;
+      border: none;
+      font-size: 18px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 35%;
+      transition: all .5s;
+      cursor: pointer; }
+      .reserve1 .imageReserve1 #buttonSubmitReserve1:hover {
+        padding-inline: 100px; }
+    .reserve1 .imageReserve1 img {
+      margin-left: 5px;
+      width: 27px; }
+
+.showReserve1 {
+  transform: translateX(0%) !important; }
+
+.reserve2 {
+  color: #f3f3f3;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110%;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: all .5s; }
+  .reserve2 .reserve2Container {
+    position: relative;
+    bottom: 10%;
+    display: grid;
+    background-color: #14181b;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-content: center;
+    padding-inline: 3%; }
+    .reserve2 .reserve2Container .titleReserve2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      margin-left: 10px; }
+    .reserve2 .reserve2Container .subtitleReserve2 {
+      opacity: 50%;
+      font-size: 16px;
+      margin-block: 20px;
+      margin-left: 10px; }
+    .reserve2 .reserve2Container #payment {
+      display: grid; }
+      .reserve2 .reserve2Container #payment #cardNumberLabel div {
+        display: flex; }
+        .reserve2 .reserve2Container #payment #cardNumberLabel div input {
+          width: 22%;
+          margin-inline: 3px;
+          border-radius: 11px; }
+      .reserve2 .reserve2Container #payment .expCvv {
+        display: flex; }
+        .reserve2 .reserve2Container #payment .expCvv label {
+          width: 48%; }
+      .reserve2 .reserve2Container #payment label p {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 10px; }
+      .reserve2 .reserve2Container #payment label input {
+        margin-block: 10px;
+        padding-inline: 15px;
+        color: #f3f3f3;
+        font-family: 'Poppins';
+        font-size: 16px;
+        background-color: #2C3033;
+        width: 91.5%;
+        padding-block: 18px;
+        border: none;
+        border-radius: 11px;
+        caret-color: #00FFC2;
+        transition: all .5s; }
+        .reserve2 .reserve2Container #payment label input:focus {
+          border: none;
+          outline: none;
+          box-shadow: 0px 0px 2px 2px #00FFC2;
+          border: 0; }
+        .reserve2 .reserve2Container #payment label input::-webkit-inner-spin-button, .reserve2 .reserve2Container #payment label input ::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0; }
+        .reserve2 .reserve2Container #payment label input::-webkit-calendar-picker-indicator {
+          content: '';
+          display: block;
+          background: url(../assets/svg/icons/calendarReserve.svg) no-repeat;
+          cursor: pointer; }
+    .reserve2 .reserve2Container #submitPayment {
+      font-family: 'Poppins';
+      font-weight: 500;
+      color: #14181b;
+      width: 30%;
+      padding-block: 20px;
+      border-radius: 35px;
+      border: none;
+      font-size: 18px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 35%;
+      transition: all .5s;
+      cursor: pointer; }
+      .reserve2 .reserve2Container #submitPayment:hover {
+        width: 45%; }
+
+.showReserve2 {
+  transform: translateX(0%) !important; }
+
+.reserve2Fees {
+  color: #f3f3f3;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110%;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: all .5s; }
+  .reserve2Fees .reserve2FeesContainer {
+    position: relative;
+    bottom: 10%;
+    display: grid;
+    background-color: #14181b;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-content: center;
+    padding-inline: 3%; }
+    .reserve2Fees .reserve2FeesContainer .titleReserve2Fees {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      text-align: center; }
+    .reserve2Fees .reserve2FeesContainer .subtitleReserve2Fees {
+      opacity: 50%;
+      font-size: 16px;
+      margin-block: 20px;
+      text-align: center; }
+    .reserve2Fees .reserve2FeesContainer .fees {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .reserve2Fees .reserve2FeesContainer .fees .amountFee {
+        height: 9vh;
+        border-radius: 11px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        margin-block: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: #2C343D;
+        width: 100%;
+        transition: all .5s; }
+        .reserve2Fees .reserve2FeesContainer .fees .amountFee:hover {
+          transition: all .5s;
+          background-color: #00FFC2; }
+          .reserve2Fees .reserve2FeesContainer .fees .amountFee:hover p {
+            color: #14181b;
+            border-right: 1px solid #14181b; }
+          .reserve2Fees .reserve2FeesContainer .fees .amountFee:hover h1 {
+            color: #14181b; }
+        .reserve2Fees .reserve2FeesContainer .fees .amountFee p {
+          transition: all .5s;
+          width: 60%;
+          height: 70%;
+          display: flex;
+          align-content: center;
+          color: #f3f3f3;
+          font-family: 'Poppins';
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+          align-items: center;
+          justify-content: center; }
+          .reserve2Fees .reserve2FeesContainer .fees .amountFee p strong {
+            margin-inline: 7px;
+            font-weight: 600; }
+      .reserve2Fees .reserve2FeesContainer .fees h1 {
+        transition: all .5s;
+        width: 40%;
+        color: #00FFC2;
+        font-family: 'Renogare';
+        font-weight: 100; }
+
+.showReserve2Fees {
+  transform: translateY(0%) !important; }
+
+.reserve3 {
+  color: #f3f3f3;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 110%;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: all .5s; }
+  .reserve3 .reserve3Container {
+    width: 70%;
+    position: relative;
+    bottom: 8%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #14181b; }
+    .reserve3 .reserve3Container .reserve3Content .facturation {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 20px; }
+      .reserve3 .reserve3Container .reserve3Content .facturation h3 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        cursor: default; }
+      .reserve3 .reserve3Container .reserve3Content .facturation div {
+        padding-block: 15px; }
+        .reserve3 .reserve3Container .reserve3Content .facturation div p {
+          font-weight: 300;
+          font-size: 20px;
+          cursor: default; }
+          .reserve3 .reserve3Container .reserve3Content .facturation div p strong {
+            font-weight: 500;
+            transition: all .5s;
+            cursor: default; }
+            .reserve3 .reserve3Container .reserve3Content .facturation div p strong:hover {
+              color: #00FFC2; }
+    .reserve3 .reserve3Container .reserve3Content .finalPriceReserve {
+      padding-block: 30px; }
+      .reserve3 .reserve3Container .reserve3Content .finalPriceReserve p {
+        font-size: 20px;
+        cursor: default; }
+        .reserve3 .reserve3Container .reserve3Content .finalPriceReserve p strong {
+          font-weight: 500;
+          transition: all .5s; }
+          .reserve3 .reserve3Container .reserve3Content .finalPriceReserve p strong:hover {
+            color: #00FFC2; }
+  .reserve3 .reserve3Image {
+    position: relative;
+    bottom: 8%;
+    width: 30%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    height: 100%; }
+    .reserve3 .reserve3Image #finishReserve {
+      font-family: 'Poppins';
+      font-weight: 500;
+      color: #14181b;
+      width: 100%;
+      padding-inline: 30px;
+      padding-block: 20px;
+      border-radius: 35px;
+      border: none;
+      font-size: 18px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .5s;
+      cursor: pointer; }
+      .reserve3 .reserve3Image #finishReserve:hover {
+        padding-inline: 100px; }
+
+.showReserve3 {
+  transform: translateX(0%) !important; }
+
+.backgroundReserveFinished {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 98;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s; }
+
+.reserveFinished {
+  position: fixed;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  transform: translateY(-100%);
+  transition: all .5s; }
+  .reserveFinished div {
+    position: relative;
+    bottom: 15%;
+    height: 50vh;
+    width: 40vw;
+    background-color: #252C33;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    border-radius: 11px; }
+    .reserveFinished div img {
+      margin-bottom: 15px; }
+    .reserveFinished div h3 {
+      color: #f3f3f3;
+      text-align: center;
+      font-weight: 500;
+      font-size: 24px; }
+    .reserveFinished div p {
+      font-weight: 400;
+      font-size: 18px;
+      margin-top: 15px;
+      color: #f3f3f3;
+      opacity: 50%;
+      text-align: center; }
+    .reserveFinished div button {
+      cursor: pointer;
+      color: #252C33;
+      font-family: 'Poppins';
+      font-weight: 500;
+      font-size: 18px;
+      width: 25%;
+      border-radius: 30px;
+      margin-top: 20px;
+      padding-block: 12px;
+      border: 3px solid #00FFC2;
+      background-color: #00FFC2;
+      transition: all .5s; }
+      .reserveFinished div button:hover {
+        background-color: #252C33;
+        color: #00FFC2; }
+      .reserveFinished div button:active {
+        border-color: #f3f3f3;
+        color: #f3f3f3; }
+
+.showBackgroundReserveFinished {
+  opacity: 1 !important; }
+
+.showReserveFinished {
+  transform: translateY(0%) !important; }
+
+.showReserveMenu {
+  transform: translateY(0%); }
+
+.changeHeader {
+  background-color: #272e33 !important; }
+
+@media (min-width: 320px) and (max-width: 549px) {
+  main {
+    margin-top: 70px !important; }
+  .header {
+    height: 70px !important; }
+  .nav {
+    padding-inline: 15px !important; }
+  .logo img {
+    height: 30px !important;
+    padding-left: 5px; }
+  .navMenu {
+    display: none !important; }
+  .hamburguer {
+    display: flex !important; }
+  .calendaryHeader {
+    display: none !important; }
+  .favsHeader {
+    display: none !important; }
+  .userLoged {
+    display: none !important; }
+  .hero div {
+    width: 75vw; }
+  #nameUser p {
+    font-size: 16px !important; }
+  #titleHomeTravels h1 {
+    font-size: 20px !important; }
+  #titleHero {
+    font-size: 22px; }
+  #textHero {
+    font-size: 16px;
+    margin-block: 20px !important; }
+  #planeHero {
+    margin-top: 10px; }
+    #planeHero img {
+      width: 100px; }
+  .meCard {
+    width: 250px !important;
+    height: 250px !important; }
+    .meCard .cardName p {
+      font-size: 22px !important; }
+    .meCard .cardPrice p {
+      font-size: 16px; }
+    .meCard .cardPrice button {
+      left: 45px; }
+  #buttonViewMore a {
+    margin-bottom: 30px; }
+  #cardSection {
+    padding-bottom: 40px !important; }
+  .packsContainerTitle h1 {
+    font-size: 20px !important; }
+  .backgroundsPack {
+    flex-direction: column !important; }
+    .backgroundsPack h3 {
+      display: none !important; }
+    .backgroundsPack #background1Spain {
+      width: 100% !important; }
+    .backgroundsPack #background2Spain {
+      width: 100% !important; }
+    .backgroundsPack #background3Spain {
+      width: 100% !important; }
+    .backgroundsPack #background1USA {
+      width: 100% !important; }
+    .backgroundsPack #background2USA {
+      width: 100% !important; }
+    .backgroundsPack #background3USA {
+      width: 100% !important; }
+    .backgroundsPack #background1Asia {
+      width: 100% !important; }
+    .backgroundsPack #background2Asia {
+      width: 100% !important; }
+    .backgroundsPack #background3Asia {
+      width: 100% !important; }
+  .titlePack {
+    width: 90% !important; }
+    .titlePack h1 {
+      font-size: 33px !important; }
+  .blockPack {
+    width: 85% !important; }
+    .blockPack p {
+      width: 90% !important;
+      font-size: 15px !important; }
+      .blockPack p strong {
+        font-size: 15px !important; }
+    .blockPack button {
+      font-size: 15px !important;
+      padding-inline: 40px !important;
+      padding-block: 8px !important; }
+  .reviews h1 {
+    font-size: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 40px !important; }
+  .cardReview {
+    border-radius: 25px;
+    flex-direction: column !important;
+    width: 90% !important; }
+    .cardReview p {
+      font-size: 14px !important;
+      margin-top: 10px; }
+    .cardReview .photoReview {
+      display: flex;
+      align-items: center; }
+      .cardReview .photoReview img {
+        width: 90px !important;
+        height: 90px !important;
+        margin-right: 10px !important; }
+      .cardReview .photoReview h3 {
+        color: #00FFC2;
+        font-size: 18px;
+        width: 100%;
+        font-family: 'Poppins';
+        font-weight: 500; }
+    .cardReview .nameReviewMobile {
+      display: block !important; }
+    .cardReview .nameReview {
+      display: none; }
+  .packsContainerTitle {
+    margin: 30px !important; }
+  .footerContainer {
+    flex-direction: column; }
+    .footerContainer div {
+      min-width: 220px;
+      width: 100% !important; }
+    .footerContainer .socialFooter {
+      margin-block: 30px; }
+      .footerContainer .socialFooter a img {
+        width: 140px !important; }
+      .footerContainer .socialFooter ul li a img {
+        width: 50px !important; }
+  .endText {
+    width: 90%;
+    font-size: 18px !important;
+    text-align: center; }
+  .suscribeFooter p {
+    width: 90% !important;
+    font-size: 16px !important; }
+  .suscribeFooter input {
+    padding-block: 10px !important;
+    padding-inline: 30px !important; }
+  .contactFooter h3 {
+    font-size: 20px !important; }
+  .contactFooter p {
+    font-size: 16px !important;
+    width: 90% !important; }
+  .modal {
+    width: 100vw !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    padding-block: 40px !important;
+    border: none !important;
+    box-shadow: #00FFC2 0px 0px 3px 3px !important; }
+    .modal .closeModalContainer button {
+      margin-bottom: 10px !important; }
+    .modal .closeModalContainer img {
+      width: 40px !important; }
+    .modal .textModal h2 {
+      font-size: 26px !important; }
+    .modal .addFavoritesModal p {
+      width: 80%;
+      text-align: center;
+      font-size: 14px !important; }
+    .modal .addFavoritesModal img {
+      width: 18px !important; }
+  .favOption {
+    width: 90% !important; }
+    .favOption p {
+      font-size: 15px !important; }
+    .favOption .buttonView {
+      font-size: 14px !important;
+      padding-inline: 12px !important;
+      padding-block: 4px !important; }
+    .favOption .buttonDelete {
+      margin-left: 7px !important; }
+  .modalVIewMoreBackground {
+    height: auto !important;
+    min-height: 93% !important;
+    overflow-y: scroll !important; }
+  .modalContent {
+    justify-items: center; }
+  .modalViewMore {
+    overflow-y: scroll !important;
+    padding-bottom: 40px; }
+  .containerData {
+    flex-direction: column;
+    margin-top: 10px;
+    width: 90vw !important;
+    height: auto !important;
+    align-items: center; }
+    .containerData .containerSlider {
+      width: 100% !important; }
+  .priceOption {
+    width: 90vw !important;
+    height: 150px !important;
+    margin-block: 10px; }
+    .priceOption .classFlight p {
+      font-size: 16px !important; }
+    .priceOption .classFlight h3 {
+      font-size: 16px !important; }
+    .priceOption .priceFlight {
+      margin-left: 10px; }
+      .priceOption .priceFlight h1 {
+        font-size: 30px !important; }
+      .priceOption .priceFlight .button {
+        font-size: 16px !important; }
+  .reserve1 {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    height: auto !important;
+    min-height: 100%; }
+    .reserve1 .containerReserve1 {
+      width: 80%;
+      height: 70vh;
+      align-content: center; }
+    .reserve1 .imageReserve1 {
+      width: 100% !important;
+      height: 30vh !important; }
+      .reserve1 .imageReserve1 button {
+        top: 0 !important;
+        margin-bottom: 35% !important; }
+  .reserve2 {
+    height: auto !important;
+    min-height: 100vh !important; }
+  .reserve2Container {
+    height: auto !important;
+    overflow-y: scroll !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    padding-inline: 0 !important;
+    padding-left: 7vw !important;
+    margin-bottom: 30px !important;
+    align-items: flex-start !important; }
+    .reserve2Container p {
+      margin-left: 0 !important; }
+  .titleReserve2Fees {
+    font-size: 18px !important;
+    width: 40%; }
+  .subtitleReserve2Fees {
+    font-size: 16px !important;
+    width: 50%;
+    margin-block: 10px !important; }
+  .reserve2FeesContainer {
+    justify-items: center;
+    width: 100vw !important;
+    height: 100% !important; }
+    .reserve2FeesContainer .fees button p {
+      font-size: 14px !important; }
+    .reserve2FeesContainer .fees button h1 {
+      font-size: 24px; }
+    .reserve2FeesContainer .amountFee {
+      width: 60% !important;
+      height: 11vh !important; }
+      .reserve2FeesContainer .amountFee p {
+        font-size: 16px !important; }
+  .reserve3 {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    height: auto !important;
+    min-height: 100%; }
+    .reserve3 .reserve3Container {
+      width: 100%;
+      height: 70vh;
+      align-content: center; }
+      .reserve3 .reserve3Container h3 {
+        font-size: 20px !important; }
+      .reserve3 .reserve3Container div p {
+        font-size: 16px !important; }
+    .reserve3 .reserve3Image {
+      width: 100% !important;
+      height: 30vh !important; }
+      .reserve3 .reserve3Image button {
+        top: 0 !important;
+        margin-bottom: 35% !important; }
+  #submitPayment {
+    width: 200px !important;
+    top: 30% !important;
+    font-size: 16px !important; }
+    #submitPayment img {
+      width: 20px; }
+  .reserveFinished div {
+    width: 75vw; }
+    .reserveFinished div h3 {
+      font-size: 20px !important; }
+    .reserveFinished div p {
+      font-size: 16px; }
+    .reserveFinished div button {
+      width: 50%; }
+  .myReserves h3 {
+    font-size: 20px !important; }
+  #exitMyReserves img {
+    width: 50px; }
+  .reserves {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+    justify-content: center; }
+    .reserves .optionReserve {
+      display: flex !important;
+      flex-direction: column !important;
+      padding-inline: 5px;
+      width: 65vw !important;
+      height: 45vh !important; }
+    .reserves .destination {
+      width: 90% !important;
+      padding-inline: 5px; }
+      .reserves .destination p {
+        font-size: 14px !important; }
+    .reserves .classReserve {
+      width: 90% !important;
+      padding-inline: 5px;
+      border-left: none !important;
+      border-right: none !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+      .reserves .classReserve p {
+        font-size: 14px !important; }
+    .reserves .deaparture {
+      width: 90% !important;
+      padding-inline: 5px; }
+      .reserves .deaparture p {
+        font-size: 14px !important; }
+  #endPage p {
+    font-size: 16px !important; } }
+
+@media (min-width: 550px) and (max-width: 799px) {
+  .navMenu {
+    display: none !important; }
+  .hamburguer {
+    display: flex !important; }
+  .calendaryHeader {
+    display: none !important; }
+  .favsHeader {
+    display: none !important; }
+  .userLoged {
+    display: none !important; }
+  .hero div {
+    width: 70vw; }
+  .backgroundsPack {
+    flex-direction: column !important; }
+    .backgroundsPack h3 {
+      display: none !important; }
+    .backgroundsPack #background1Spain {
+      width: 100% !important; }
+    .backgroundsPack #background2Spain {
+      width: 100% !important; }
+    .backgroundsPack #background3Spain {
+      width: 100% !important; }
+    .backgroundsPack #background1USA {
+      width: 100% !important; }
+    .backgroundsPack #background2USA {
+      width: 100% !important; }
+    .backgroundsPack #background3USA {
+      width: 100% !important; }
+    .backgroundsPack #background1Asia {
+      width: 100% !important; }
+    .backgroundsPack #background2Asia {
+      width: 100% !important; }
+    .backgroundsPack #background3Asia {
+      width: 100% !important; }
+  .titlePack {
+    width: 80% !important; }
+    .titlePack h1 {
+      font-size: 50px !important; }
+  .blockPack {
+    width: 70% !important; }
+    .blockPack p {
+      width: 85% !important; }
+  .cardReview {
+    border-radius: 25px;
+    flex-direction: column !important;
+    width: 80% !important; }
+    .cardReview p {
+      font-size: 16px !important;
+      margin-top: 10px; }
+    .cardReview .photoReview {
+      display: flex;
+      align-items: center; }
+      .cardReview .photoReview img {
+        width: 100px !important;
+        height: 100px !important; }
+      .cardReview .photoReview h3 {
+        color: #00FFC2;
+        font-size: 22px;
+        font-family: 'Poppins';
+        font-weight: 500; }
+    .cardReview .nameReviewMobile {
+      display: block !important; }
+    .cardReview .nameReview {
+      display: none; }
+  .footerContainer {
+    flex-direction: column; }
+    .footerContainer div {
+      min-width: 220px;
+      width: 100% !important; }
+    .footerContainer .socialFooter {
+      margin-block: 30px; }
+  .modal {
+    width: 100vw !important;
+    border-radius: 0px !important;
+    padding: 20px !important;
+    border: none !important;
+    box-shadow: #00FFC2 0px 0px 3px 3px !important; }
+    .modal .closeModalContainer button {
+      margin-bottom: 10px !important; }
+    .modal .closeModalContainer img {
+      width: 40px !important; }
+    .modal .textModal h2 {
+      font-size: 26px !important; }
+    .modal .addFavoritesModal p {
+      font-size: 14px !important; }
+    .modal .addFavoritesModal img {
+      width: 18px !important; }
+  .favOption p {
+    font-size: 16px !important; }
+  .favOption .buttonView {
+    font-size: 14px !important;
+    padding-inline: 25px !important;
+    padding-block: 4px !important; }
+  .modalVIewMoreBackground {
+    height: auto !important;
+    min-height: 93% !important;
+    overflow-y: scroll !important; }
+  .modalContent {
+    justify-items: center; }
+  .modalViewMore {
+    overflow-y: scroll !important;
+    padding-bottom: 40px; }
+  .containerData {
+    flex-direction: column;
+    width: 90vw !important;
+    height: auto !important;
+    align-items: center; }
+    .containerData .containerSlider {
+      width: 100% !important; }
+  .priceOption {
+    width: 90vw !important;
+    height: 150px !important;
+    margin-block: 10px; }
+  .reserve1 {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    height: auto !important;
+    min-height: 100%; }
+    .reserve1 .containerReserve1 {
+      width: 80%;
+      height: 70vh;
+      align-content: center; }
+    .reserve1 .imageReserve1 {
+      width: 100% !important;
+      height: 30vh !important; }
+      .reserve1 .imageReserve1 button {
+        top: 0 !important;
+        margin-bottom: 35% !important; }
+  .reserve2Container {
+    width: 100% !important;
+    padding-inline: 0 !important;
+    padding-left: 7vw !important; }
+    .reserve2Container p {
+      margin-left: 0 !important; }
+  .reserve2FeesContainer {
+    width: 100% !important; }
+    .reserve2FeesContainer .amountFee {
+      width: 80% !important; }
+      .reserve2FeesContainer .amountFee p {
+        font-size: 16px !important; }
+  .reserve3 {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    height: auto !important;
+    min-height: 100%; }
+    .reserve3 .reserve3Container {
+      width: 100%;
+      height: 70vh;
+      align-content: center; }
+      .reserve3 .reserve3Container h3 {
+        font-size: 20px !important; }
+      .reserve3 .reserve3Container div p {
+        font-size: 16px !important; }
+    .reserve3 .reserve3Image {
+      width: 100% !important;
+      height: 30vh !important; }
+      .reserve3 .reserve3Image button {
+        top: 0 !important;
+        margin-bottom: 35% !important; }
+  .reserveFinished div {
+    width: 75vw; }
+    .reserveFinished div h3 {
+      font-size: 20px !important; }
+    .reserveFinished div p {
+      font-size: 16px; }
+    .reserveFinished div button {
+      width: 50%; }
+  .myReserves h3 {
+    font-size: 20px !important; }
+  #exitMyReserves img {
+    width: 60px; }
+  .reserves .optionReserve {
+    width: 80vw !important;
+    height: 13vh !important; }
+  .reserves .destination p {
+    font-size: 14px !important; }
+  .reserves .classReserve p {
+    font-size: 14px !important; }
+  .reserves .deaparture p {
+    font-size: 14px !important; } }
+
+@media (min-width: 1280px) and (max-width: 1740px) {
+  p {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .logo img {
+    height: 40px !important; }
+  .resAndFav button img {
+    width: 20px !important; }
+  .resAndFav .userLoged img {
+    width: 30px !important; }
+  .navMenuItem a {
+    font-size: 16px; }
+  #logIn {
+    width: 40% !important; }
+    #logIn h1 {
+      font-size: 30px !important; }
+    #logIn p {
+      font-size: 16px !important; }
+  #signUp {
+    width: 40% !important; }
+    #signUp h1 {
+      font-size: 30px !important; }
+    #signUp p {
+      font-size: 16px !important; }
+  #nameUser p {
+    font-size: 16px !important; }
+  #titleHomeTravels h1 {
+    font-size: 24px !important; }
+  #titleHero {
+    font-size: 30px; }
+  #textHero {
+    font-size: 18px; }
+  #planeHero {
+    margin-top: 40px; }
+    #planeHero img {
+      width: 110px; }
+  #cardSection {
+    max-width: 1000px; }
+  .loader {
+    width: 60px;
+    height: 60px; }
+  .meCard {
+    width: 270px !important;
+    height: 270px !important; }
+    .meCard .cardName p {
+      font-size: 22px !important; }
+    .meCard .cardPrice p {
+      font-size: 16px !important; }
+    .meCard .cardPrice button {
+      left: 53px !important; }
+  .packsContainerTitle h1 {
+    font-size: 24px !important; }
+  .modalPack div h3 {
+    font-size: 20px !important; }
+  .modalPack div h1 {
+    font-size: 60px !important; }
+  .blockPack p {
+    font-size: 16px !important; }
+  .blockPack button {
+    font-size: 16px !important; }
+  .cardReview {
+    width: 70%; }
+    .cardReview h3 {
+      font-size: 20px !important; }
+    .cardReview img {
+      width: 120px !important;
+      height: 120px !important; }
+    .cardReview p {
+      font-size: 16px !important; }
+  .exitModalView {
+    margin-block: 20px !important; }
+    .exitModalView button img {
+      width: 45px !important; }
+  .modalName p {
+    font-size: 24px !important; }
+  .exitModalView {
+    width: 60% !important; }
+  .prices {
+    width: 60% !important; }
+    .prices button {
+      font-size: 14px !important; }
+    .prices h1 {
+      font-size: 26px !important; }
+    .prices .classFlight p {
+      font-size: 16px; }
+    .prices .classFlight h3 {
+      font-size: 16px; }
+  .reserve1 {
+    width: 100vw !important; }
+    .reserve1 #buttonSubmitReserve1 {
+      top: 30% !important;
+      font-size: 16px !important; }
+      .reserve1 #buttonSubmitReserve1 img {
+        width: 20px; }
+  .titleReserve1 {
+    font-size: 20px !important; }
+  input {
+    font-size: 14px !important; }
+  select {
+    font-size: 14px !important; }
+  .reserve2Container {
+    width: 50% !important; }
+    .reserve2Container .titleReserve2 {
+      font-size: 20px !important; }
+  #submitPayment {
+    top: 30% !important;
+    font-size: 16px !important; }
+    #submitPayment img {
+      width: 20px; }
+  .reserve2FeesContainer {
+    width: 50% !important; }
+  .titleReserve2Fees {
+    font-size: 20px !important; }
+  .amountFee {
+    width: 80% !important; }
+  .fees p {
+    font-size: 16px; }
+  .fees h1 {
+    font-size: 22px; }
+  #finishReserve {
+    font-size: 16px !important; }
+  .facturation h3 {
+    font-size: 20px !important; }
+  .facturation p {
+    font-size: 16px !important; }
+  .reserveFinished h3 {
+    font-size: 20px !important; }
+  .reserveFinished p {
+    font-size: 16px !important; }
+  .reserveFinished button {
+    font-size: 16px !important;
+    width: 35% !important; }
+  footer p {
+    font-size: 14px !important; }
+  footer h3 {
+    font-size: 28px !important; }
+  footer button {
+    font-size: 16px !important; }
+  footer .socialFooter a img {
+    width: 170px !important; }
+  footer .socialFooter ul li a img {
+    width: 45px !important; }
+  #endPage p {
+    font-size: 16px !important; }
+  .myReserves h3 {
+    font-size: 20px !important; }
+  #exitMyReserves img {
+    width: 60px; }
+  .reserves .optionReserve {
+    width: 40vw !important;
+    height: 13vh !important; }
+  .reserves .destination p {
+    font-size: 14px !important; }
+  .reserves .classReserve p {
+    font-size: 14px !important; }
+  .reserves .deaparture p {
+    font-size: 14px !important; } }
+
+@media (min-width: 800px) and (max-width: 1279px) {
+  p {
+    font-size: 16px;
+    margin-bottom: 0; }
+  .logo img {
+    height: 40px !important; }
+  .resAndFav {
+    width: 126px !important; }
+  .hero div {
+    width: 50vw !important; }
+  #logIn {
+    width: 40% !important; }
+    #logIn h1 {
+      font-size: 30px !important; }
+    #logIn p {
+      font-size: 16px !important; }
+  #signUp {
+    width: 40% !important; }
+    #signUp h1 {
+      font-size: 30px !important; }
+    #signUp p {
+      font-size: 16px !important; }
+  #nameUser p {
+    font-size: 16px !important; }
+  #titleHomeTravels h1 {
+    font-size: 24px !important; }
+  #cardSection {
+    max-width: 1000px; }
+  .loader {
+    width: 60px;
+    height: 60px; }
+  .meCard {
+    width: 270px !important;
+    height: 270px !important; }
+    .meCard .cardName p {
+      font-size: 22px !important; }
+    .meCard .cardPrice p {
+      font-size: 16px !important; }
+    .meCard .cardPrice button {
+      left: 53px !important; }
+  .packsContainerTitle h1 {
+    font-size: 24px !important; }
+  .modalPack div h3 {
+    font-size: 20px !important; }
+  .modalPack div h1 {
+    font-size: 60px !important; }
+  .blockPack p {
+    font-size: 16px !important; }
+  .blockPack button {
+    font-size: 16px !important; }
+  .cardReview {
+    width: 80%; }
+    .cardReview h3 {
+      font-size: 20px !important; }
+    .cardReview img {
+      width: 120px !important;
+      height: 120px !important; }
+    .cardReview p {
+      font-size: 16px !important; }
+  .exitModalView {
+    margin-block: 20px !important; }
+    .exitModalView button img {
+      width: 45px !important; }
+  .modalName p {
+    font-size: 24px !important; }
+  .exitModalView {
+    width: 60% !important; }
+  .prices {
+    width: 60% !important; }
+    .prices button {
+      font-size: 14px !important; }
+    .prices h1 {
+      font-size: 26px !important; }
+    .prices .classFlight p {
+      font-size: 16px; }
+    .prices .classFlight h3 {
+      font-size: 16px; }
+  .reserve1 {
+    width: 100vw !important; }
+    .reserve1 #buttonSubmitReserve1 {
+      top: 30% !important;
+      font-size: 16px !important; }
+      .reserve1 #buttonSubmitReserve1 img {
+        width: 20px; }
+  .titleReserve1 {
+    font-size: 20px !important; }
+  input {
+    font-size: 14px !important; }
+  select {
+    font-size: 14px !important; }
+  .reserve2Container {
+    width: 50% !important; }
+    .reserve2Container .titleReserve2 {
+      font-size: 20px !important; }
+  #submitPayment {
+    top: 30% !important;
+    font-size: 16px !important; }
+    #submitPayment img {
+      width: 20px; }
+  .reserve2FeesContainer {
+    width: 50% !important; }
+  .titleReserve2Fees {
+    font-size: 20px !important; }
+  .amountFee {
+    width: 80% !important; }
+  .fees p {
+    font-size: 16px; }
+  .fees h1 {
+    font-size: 22px; }
+  #finishReserve {
+    font-size: 16px !important; }
+  .facturation h3 {
+    font-size: 20px !important; }
+  .facturation p {
+    font-size: 16px !important; }
+  .reserveFinished h3 {
+    font-size: 20px !important; }
+  .reserveFinished p {
+    font-size: 16px !important; }
+  .reserveFinished button {
+    font-size: 16px !important;
+    width: 35% !important; }
+  footer #suscribeInput {
+    padding-block: 10px !important;
+    padding-inline: 10px !important; }
+  footer p {
+    font-size: 14px !important; }
+  footer h3 {
+    font-size: 28px !important; }
+  footer button {
+    font-size: 16px !important; }
+  footer .socialFooter a img {
+    width: 170px !important; }
+  footer .socialFooter ul li a img {
+    width: 45px !important; }
+  #endPage p {
+    font-size: 16px !important; }
+  .myReserves h3 {
+    font-size: 20px !important; }
+  #exitMyReserves img {
+    width: 60px; }
+  .reserves .optionReserve {
+    width: 75vw !important;
+    height: 12vh !important; }
+  .reserves .destination p {
+    font-size: 14px !important; }
+  .reserves .classReserve p {
+    font-size: 14px !important; }
+  .reserves .deaparture p {
+    font-size: 14px !important; }
+  .titlePack {
+    width: 80% !important; }
+  .blockPack {
+    width: 70% !important; }
+  .modal {
+    width: 90vw !important;
+    border-radius: 10px 40px 10px 40px  !important; } }

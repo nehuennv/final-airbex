@@ -1,0 +1,339 @@
+[
+  {
+  "id": 0,
+  "continente": "Europe",
+  "nombre": "Amsterdam",
+  "nombre2": ", N.L",
+  "precio": 550,
+  "img": "./assets/img/amsterdam.jpg"
+},
+{
+  "id": 1,
+  "continente": "Europe",
+  "nombre": "Barcelona",
+  "nombre2": ", Spain",
+  "precio": 500,
+  "img": "./assets/img/barcelona.jpg"
+},
+{
+  "id": 2,
+  "continente": "Europe",
+  "nombre": "Berlin",
+  "nombre2": ", Germany",
+  "precio": 650,
+  "img": "./assets/img/berlin.jpg"
+},
+{
+  "id": 3,
+  "continente": "Asia",
+  "nombre": "Bora Bora",
+  "nombre2": ", Maldives",
+  "precio": 970,
+  "img": "./assets/img/maldives.jpg"
+},
+{
+  "id": 4,
+  "continente": "South America",
+  "nombre": "Buenos Aires",
+  "nombre2": ", ARG",
+  "precio": 450,
+  "img": "./assets/img/bsas.jpg"
+},
+{
+  "id": 5,
+  "continente": "South America",
+  "nombre": "Cancun",
+  "nombre2": ", Mexico",
+  "precio": 690,
+  "img": "./assets/img/cancun.jpg"
+},
+{
+  "id": 6,
+  "continente": "Europe",
+  "nombre": "Cannes",
+  "nombre2": ", France",
+  "precio": 625,
+  "img": "./assets/img/cannes.jpg"
+},
+{
+  "id": 7,
+  "continente": "South America",
+  "nombre": "Cusco",
+  "nombre2": ", Perú",
+  "precio": 400,
+  "img": "./assets/img/machu.jpg"
+},
+{
+  "id": 8,
+  "continente": "Asia",
+  "nombre": "Doha",
+  "nombre2": ", Qatar",
+  "precio": 800,
+  "img": "./assets/img/doha.jpg"
+},
+{
+  "id": 9,
+  "continente": "Africa",
+  "nombre": "Giza",
+  "nombre2": ", Egypt",
+  "precio": 900,
+  "img": "./assets/img/giza.jpg"
+},
+{
+  "id": 11,
+  "continente": "North America",
+  "nombre": "Las Vegas",
+  "nombre2": ", U.S.A",
+  "precio": 750,
+  "img": "./assets/img/vegas.jpg"
+},
+{
+  "id": 12,
+  "continente": "Europe",
+  "nombre": "London",
+  "nombre2": ", England",
+  "precio": 790,
+  "img": "./assets/img/london.jpg"
+},
+{
+  "id": 13,
+  "continente": "North America",
+  "nombre": "Los Angeles",
+  "nombre2": ", U.S.A",
+  "precio": 640,
+  "img": "./assets/img/l.a.jpg"
+},
+{
+  "id": 14,
+  "continente": "Europe",
+  "nombre": "Madrid",
+  "nombre2": ", Spain",
+  "precio": 550,
+  "img": "./assets/img/Madrid.jpg"
+},
+{
+  "id": 16,
+  "continente": "North America",
+  "nombre": "Miami",
+  "nombre2": ", U.S.A",
+  "precio": 670,
+  "img": "./assets/img/miami.jpg"
+},
+{
+  "id": 17,
+  "continente": "Europe",
+  "nombre": "Milan",
+  "nombre2": ", Italy",
+  "precio": 770,
+  "img": "./assets/img/milan.jpg"
+},
+{
+  "id": 18,
+  "continente": "Europe",
+  "nombre": "Moscow",
+  "nombre2": ", Rusia",
+  "precio": 690,
+  "img": "./assets/img/moscow.jpg"
+},
+{
+  "id": 19,
+  "continente": "Europe",
+  "nombre": "Munich",
+  "nombre2": ", Germany",
+  "precio": 680,
+  "img": "./assets/img/munich.jpg"
+},
+{
+  "id": 20,
+  "continente": "North America",
+  "nombre": "New York",
+  "nombre2": ", U.S.A",
+  "precio": 500,
+  "img": "./assets/img/ny.jpg"
+},
+{
+  "id": 21,
+  "continente": "North America",
+  "nombre": "Ohio",
+  "nombre2": ", U.S.A",
+  "precio": 510,
+  "img": "./assets/img/ohio.jpg"
+},
+{
+  "id": 22,
+  "continente": "Europe",
+  "nombre": "Paris",
+  "nombre2": ", France",
+  "precio": 450,
+  "img": "./assets/img/paris.jpg"
+},
+{
+  "id": 23,
+  "continente": "Asia",
+  "nombre": "Pekin",
+  "nombre2": ", China",
+  "precio": 500,
+  "img": "./assets/img/China.jpg"
+},
+{
+  "id": 24,
+  "continente": "Europe",
+  "nombre": "Porto",
+  "nombre2": ", Portugal",
+  "precio": 550,
+  "img": "./assets/img/porto.jpg"
+},
+{
+  "id": 25,
+  "continente": "Europe",
+  "nombre": "Prague",
+  "nombre2": ", C.Z.E",
+  "precio": 790,
+  "img": "./assets/img/prague.jpg"
+},
+{
+  "id": 15,
+  "continente": "Africa",
+  "nombre": "Rabat",
+  "nombre2": ", Morocco",
+  "precio": 400,
+  "img": "./assets/img/rabat.jpg"
+},
+{
+  "id": 26,
+  "continente": "South America",
+  "nombre": "Rio de Janeiro",
+  "nombre2": ", Brazil",
+  "precio": 530,
+  "img": "./assets/img/rioJaneiro.jpg"
+},
+{
+  "id": 27,
+  "continente": "Europe",
+  "nombre": "Rome",
+  "nombre2": ", Italy",
+  "precio": 450,
+  "img": "./assets/img/roma.jpg"
+},
+{
+  "id": 28,
+  "continente": "South America",
+  "nombre": "Santiago",
+  "nombre2": ", Chile",
+  "precio": 440,
+  "img": "./assets/img/santiago.jpg"
+},
+{
+  "id": 29,
+  "continente": "Europe",
+  "nombre": "Santorini",
+  "nombre2": ", Grecce",
+  "precio": 750,
+  "img": "./assets/img/santorini.jpg"
+},
+{
+  "id": 30,
+  "continente": "Asia",
+  "nombre": "Tokyo",
+  "nombre2": ", Japan",
+  "precio": 500,
+  "img": "./assets/img/tokyo.jpg"
+},
+{
+  "id": 31,
+  "continente": "South America",
+  "nombre": "Ushuaia",
+  "nombre2": ", Argentina",
+  "precio": 490,
+  "img": "./assets/img/ushuaia.jpg"
+},
+{
+  "id": 32,
+  "continente": "Europe",
+  "nombre": "Valencia",
+  "nombre2": ", Spain",
+  "precio": 400,
+  "img": "./assets/img/valencia.jpg"
+},
+{
+  "id": 33,
+  "continente": "Europe",
+  "nombre": "Venezia",
+  "nombre2": ", Italy",
+  "precio": 650,
+  "img": "./assets/img/venezia.jpg"
+},
+{
+  "id": 34,
+  "continente": "Europe",
+  "nombre": "Viena",
+  "nombre2": ", Austria",
+  "precio": 290,
+  "img": "./assets/img/viena.jpg"
+},
+{
+  "id": 35,
+  "continente": "Africa",
+  "nombre": "Agra",
+  "nombre2": ", India",
+  "precio": 210,
+  "img": "./assets/img/agra.jpg"
+},
+{
+  "id": 36,
+  "continente": "North America",
+  "nombre": "Orlando",
+  "nombre2": ", U.S.A",
+  "precio": 380,
+  "img": "./assets/img/orlando.jpg"
+},
+{
+  "id": 37,
+  "continente": "Europe",
+  "nombre": "Istanbul",
+  "nombre2": ", Turkey",
+  "precio": 280,
+  "img": "./assets/img/istambul.jpg"
+},
+{
+  "id": 38,
+  "continente": "South America",
+  "nombre": "Tulúm",
+  "nombre2": ", Mexico",
+  "precio": 480,
+  "img": "./assets/img/tulum.jpg"
+},
+{
+  "id": 39,
+  "continente": "Asia",
+  "nombre": "Beijing",
+  "nombre2": ", China",
+  "precio": 250,
+  "img": "./assets/img/beijing.jpg"
+},
+{
+  "id": 40,
+  "continente": "Asia",
+  "nombre": "Bali",
+  "nombre2": ", Indonesia",
+  "precio": 360,
+  "img": "./assets/img/bali.jpg"
+},
+{
+  "id": 41,
+  "continente": "Europe",
+  "nombre": "Bern",
+  "nombre2": ", Switzerland",
+  "precio": 300,
+  "img": "./assets/img/bern.jpg"
+},
+{
+  "id": 42,
+  "continente": "Europe",
+  "nombre": "Crete",
+  "nombre2": ", Greece",
+  "precio": 350,
+  "img": "./assets/img/creta.jpg"
+}
+
+]

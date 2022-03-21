@@ -1,0 +1,87 @@
+.selectFlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flightsContainer{
+    background-color: rgba(58, 69, 80, 0.2);
+    max-width: 1000px;
+    height: 120px;
+    width: 75%;
+    border-radius:0px 0px 20px 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        label{
+            width: 100%;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            padding-inline: 40px;
+            
+            p{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                font-family: 'Poppins';
+                color: $primaryColor;
+                font-weight: 500;
+                font-size: 16px;
+                background: $secondColor;
+                border-radius: 5px 5px 0px 0px;
+                height: 40px;
+                width: 150%;
+                justify-content: center;
+                align-content: center;
+            }
+            #searchP{
+                img{
+                    margin-left: 4px;
+                }
+            }
+            select{
+                height: 42px;
+                width: 150%;
+                margin-inline: 15px;
+                color: $fontColor;
+                background-color: $footerColor;
+                border: none;
+                border-radius: 0px 0px 17px 17px;
+                text-align: center;
+                font-family: 'Poppins';
+                &:focus{
+                    border: none;
+                    box-shadow: 0px 0px 20px 0px $primaryColor;
+                }
+
+
+
+    
+    
+            }
+            input{
+                caret-color: $primaryColor;
+                height: 42px;
+                width: 150%;
+                color: $fontColor;
+                background-color: $footerColor;
+                border: none;
+                border-radius: 0px 0px 17px 17px;                
+                text-align: center;
+                font-family: 'Poppins';
+                &:focus{
+                    border: none;
+                }
+            }
+        }
+
+    }
+}

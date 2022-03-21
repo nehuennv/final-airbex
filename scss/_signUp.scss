@@ -1,0 +1,202 @@
+.loginContainer{
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(17, 17, 17, 0.8);
+    transition: all 1s;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    
+    #closeLogIn{
+        #butCloseLog{
+            background: transparent;
+            background-repeat:no-repeat;
+            border: none;   
+            cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(2%) hue-rotate(290deg) brightness(115%) contrast(100%);
+
+                 }
+    }
+    #logIn{
+        background-image: url(../assets/img/background-contact-rose-6.jpg);
+        background-size: cover;
+        width: 30%;
+        height: 65vh;
+        color: $fontColor;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 30px 0px 0px 20px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.30);
+        h1{
+            font-family: 'Renogare';
+            font-weight: 100;
+            font-size: 36px;
+            padding-left: 12px;
+        }
+
+    }
+}
+.formLogIn{
+    // display: flex;
+    button{
+
+        background-color: $fontColor;
+        color: $background;
+        background-repeat:no-repeat;
+        border:  3px solid $fontColor;
+        cursor: pointer;
+        width: 50%;
+        border-radius: 500px;
+        padding-block: 17px;
+        font-family: 'Renogare';
+        font-weight: 100;
+        font-size: 18px;
+        margin-top: 12px;
+        transition: all .3s;
+        &:hover{
+            background-color: transparent;
+            color: $fontColor;
+            border:  3px solid $fontColor;
+        }
+    }
+    label{
+
+        p{
+            font-size: 18px;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            padding-left: 12px;
+            
+        }
+
+        input {
+            caret-color: $fontColor;
+            background: rgba(255, 255, 255, 0.26);
+            padding-block: 4%;
+            width: 90%;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            padding-inline: 20px;
+            font-family: 'Poppins';
+            color: $fontColor;
+            transition: all .5s;
+
+            &::-webkit-calendar-picker-indicator {
+                content: '';
+                display: block;
+                background: url(../assets/svg/icons/calendarReserve.svg) no-repeat;
+                cursor: pointer;
+
+              }
+            
+            &:focus{
+                border: none;
+                outline: none;
+                box-shadow: 0px 0px 2px 2px $fontColor;
+                border: 0;
+            }
+            &::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+
+        }
+    }
+
+
+#signUp{
+    background-color: $background;
+    // box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.30);
+
+    width: 30%;
+    height: 65vh;
+    color: $fontColor;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    border-radius: 0px 30px 30px 0px;
+    &::-webkit-scrollbar{
+        width: 7px;
+        transition: all 1s;
+        margin-block: 10px;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $secondColor;
+
+        border-radius: 10px;
+        transition: all 1s;
+        &:hover{
+            background: $fontColor;
+        }
+    }
+    h1{
+        padding-left: 12px;    
+        font-family: 'Renogare';
+        font-weight: 100;
+        font-size: 36px;
+            
+
+    }
+    #checkboxSignUp{
+
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 12px;
+        
+        input{
+            caret-color: $primaryColor;
+            border-radius: 100px;
+            margin-bottom: 0px;
+            background-color: transparent;
+            border: 10px;
+            width: 4%;
+        }
+
+        p{
+            width: 95%;
+
+
+        }
+
+    }
+    button{
+        background-color: transparent;
+        color: $fontColor;
+        border:  2px solid $fontColor;
+
+        margin-top: 0px;
+        transition: all .5s;
+        width: 50%;
+        white-space: nowrap;
+        &:hover{
+            background-color: $fontColor;
+            color: $background;
+
+        }
+    }
+}
+.loginShow{
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+}
+.deleteButton{
+    display: none;
+}

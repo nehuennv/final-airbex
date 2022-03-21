@@ -1,0 +1,325 @@
+.packsContainer{
+
+    .packsContainerTitle{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        margin: 60px;
+        h1{
+            color: $fontColor;
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 30px;
+        }
+    }
+    .modalPack{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 40px ;
+        .backgroundsPack{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            
+            #background1Spain{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/Madrid.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+
+            }
+            #background2Spain{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/valencia.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background3Spain{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/barcelonapack.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background1USA{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/l.a.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background2USA{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/vegaspack.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background3USA{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/ny.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background1Asia{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/China.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background2Asia{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/Singapur.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+            #background3Asia{
+                height: 100%;
+                display: grid;
+                justify-content: center;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url(../assets/img/Japon.jpg);
+                h3{
+                    font-weight: 500;              
+                    margin-top:50px ;
+                    font-size: 24px;
+                    font-family: 'Poppins';
+                    color: rgba(255, 255, 255, 1); 
+                    opacity: 50%;
+                    transition: all .5s;
+                    cursor: default;
+                    &:hover{
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+        .contentPack{
+            display: grid;
+            justify-items:center ;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            .titlePack{
+                width: 45%;
+                display: grid;
+                justify-items:center ;
+                align-items: center;
+                border-bottom: 2px solid #fff;
+                h1{
+                    font-family: 'Renogare';
+                    font-size: 80px;
+                    font-weight: 400;
+                    color: $fontColor;
+                    text-align: center;
+                }
+            }
+            .blockPack{
+                background-color: $background;
+                padding-block: 40px;
+                display: grid;
+            justify-items:center ;
+            align-items: center;
+            text-align: center;
+            border-radius: 0px 0px 20px 20px;
+            width: 40%;
+            transition: all .5s;
+            &:hover{
+                background-color: rgba(26, 30, 34, 0.7);
+            }
+                p{
+                    width: 70%;
+                    color: $fontColor;
+                    font-size: 18px;
+                }
+                .pricePack{
+                    padding-block: 20px;
+                    strong{
+                        font-family: 'Renogare';
+                        font-weight: 400;
+                        strong{
+                            color: $primaryColor;
+                        }
+                    }
+                }
+                button{
+                    border: solid 3px $primaryColor;
+                    background-color: $primaryColor;
+                    background-repeat: no-repeat;
+                    font-family: 'Renogare';
+                    color: $background;
+                    font-size: 18px;
+                    padding-block: 12px;
+                    padding-inline: 47px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: transparent;
+                        color: $primaryColor;
+                    }
+                    &:active{
+                        color: $fontColor;
+                    }
+                }
+    
+            }
+        }
+    
+        }
+}
+.separatorLine{
+width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+        height: 1px;
+        width: 65vw;
+        max-width: 100%;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);        
+        border-radius: 20px;
+    }
+}

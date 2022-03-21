@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ᴀɪʀʙᴇx</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="./assets/svg/icons/miniLogoAirbex.png" type="image/png" />
+    
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo"><img src="assets/svg/icons/airbexgreen.svg" alt=""></a>
+      <ul class="navMenu">
+        <li class="navMenuItem"><a href="./index.html" class="navMenuLink inactiveNav" >Home</a></li>
+        <li class="navMenuItem"><a href="./flights.html"  class="navMenuLink inactiveNav">Flights</a></li>
+        <li class="navMenuItem"><a href="#" class="navMenuLink " id="activeNav" >Offers</a></li>
+      </ul>
+      <div class="resAndFav">
+        <div class = "hamburguer">
+          <span></span><span></span><span></span>
+        </div> 
+        <button class="calendary"><img src="./assets/svg/icons/Calendar_Check.svg" alt=""></button>
+        <button class="openFavorites favsHeader"><img src="./assets/svg/icons/heart_fill.svg" alt=""></button>
+        <button class="userLoged"><img src="./assets/svg/icons/user.svg" alt=""></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hoverUser"><p id="nameUser">Your User</p></div>
+    <div class="modalViewMoreBackground">
+  
+    </div>      
+    
+    <div class="reserve1" >
+          
+    </div>
+  
+    <div class="reserve2">
+  
+    </div>
+    <div class="reserve2Fees">
+  
+    </div>
+  
+    <div class="reserve3">
+  
+    </div>
+    <div class="backgroundReserveFinished">
+  
+    </div>
+    <div class="reserveFinished">
+      <div>
+        <img src="./assets/svg/icons/reserveOK.svg" alt="">
+        <h3>Booked successfully!</h3>
+        <p>You will receive a receipt in the email<br>villavicencionehuen@gmail.com.</p>
+        <button id="acceptReserve">To accept</button>
+      </div>
+    </div>
+  
+    <div class="myReserves">
+      <div class="exitMyReserves">
+        <button id="exitMyReserves">
+          <img  src="./assets/svg/icons/arrowTop.svg" alt="">
+        </button>
+      </div>
+      <h3 id="myReservesTitle">My Reserves</h3>
+      <div class="reserves">
+  
+      </div>
+  
+    </div>
+    <div class="menuContainer">
+      <div class="userMobile">
+        <img src="./assets/svg/icons/user.svg" alt="">
+        <button class="buttonMobileName loginFlights">Log in</button>
+        <p class="nameUserMobile">Nehuen</p>
+      </div>
+      <div class="menuMobile">
+        <ul>
+          <li class="navItemMobile">
+            <a href="./index.html">Home<img src="./assets/svg/icons/House_01.svg" alt=""></a>
+          </li>
+          <li class="navItemMobile">
+            <a href="./flights.html">Flights<img src="./assets/svg/icons/Map_Pin.svg" alt=""></a>
+          </li>
+          <li class="navItemMobile">
+            <a href="./offers.html">Offers<img src="./assets/svg/icons/Tag.svg" alt=""></a>
+          </li>
+          <li class="navItemMobile">
+            <button class="openFavorites favsMobile">Favorites <img src="./assets/svg/icons/heart_outline.svg" alt=""></button>
+          </li>
+          <li class="navItemMobile">
+            <button class="calendary calendaryMobile">My Reserves <img src="./assets/svg/icons/Calendar_Check.svg" alt=""></button>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  
+    <div class="modalContainer">
+          <div class="modal">
+            <div class="closeModalContainer">
+              <button id="closeModal"><img src="./assets/svg/icons/arrowTop.svg" alt=""></button>
+            </div>
+            <div class="textModal">
+              <h2>Favorites</h2>
+            </div>
+            <div class="optionFavorite">
+  
+            </div>
+            <div class="addFavoritesModal">
+              <p>Add something to your favorites by clicking on </p>
+              <img src="./assets/svg/icons/heart_outline.svg" alt="">
+            </div>
+          </div>
+  
+        </div>
+  
+        <section class="menuOffers">
+          <div class="titleOffers">
+            <h1>Weekly Offers</h1>
+            <p>Enjoy these offers of up to 40% off, to disconnect a little.</p>
+          </div>
+          <div id="cardSection">
+      
+          </div>
+        </section>
+
+  </main>
+  <footer>
+    <div class="footerContainer">
+      <div class="suscribeFooter">
+        <p>Do you like travel right? <strong>Suscribe </strong>with your email and <strong>receive the best offers of the week.</strong></p>
+        <input id="suscribeInput" type="email">
+        <button id="suscribeButton">SUSCRIBE</button>
+      </div>
+      <div class="socialFooter">
+        <a ><img src="./assets/svg/icons/airbexgreen.svg" alt=""></a>
+        <ul>
+          <li><a href="#"><img src="./assets/svg/icons/footer/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="./assets/svg/icons/footer/instagram.svg" alt=""></a></li>
+          <li><a href="#"><img src="./assets/svg/icons/footer/twitter.svg" alt=""></a></li>
+          <li><a href="#"><img src="./assets/svg/icons/footer/youtube.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="contactFooter">
+        <h3>Contact us</h3>
+        <div class="contactOptions">
+          <p><img src="./assets/svg/icons/footer/Phone.svg" alt="">323-908-7024</p>
+          <p><img src="./assets/svg/icons/footer/Mail.svg" alt="">airbex@support.com</p>
+        </div>
+        <p>
+          Mon. to Fri. from <strong>8:30 a.m. to 12:30 p.m. and 4:00 p.m. to 8:00 p.m.
+          </strong>
+        </p>
+        <p>Sat. from 9:30 a.m. to 1:00 p.m.</p>
+      </div>
+    </div>
+
+  </footer>
+  <div id="endPage">
+    <p>Developed by Nehuen Villavicencio</p>
+  </div>
+  </body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="js/stockOffers.js"></script>
+  <script src="js/loginModal.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/burgerMenu.js"></script>
+  <script src="js/offers.js"></script>
+  <script src="js/crearCards.js"></script>
+  <script src="js/reserveMenu.js"></script>
+  <script src="./js/modal.js"></script>
+  </html>

@@ -1,0 +1,39 @@
+[
+  {
+    "id":"50",
+    "name1": "Madrid",
+    "name2": "Valencia",
+    "name3": "Barcelona",
+    "place": "SPAIN",
+    "destination": "Spain",
+    "description": "Enjoy the 3 most touristic places in Spain, with an unmissable discounted price!",
+    "price": 950,
+    "nameId": "Spain",
+    "img": "./assets/img/spain.jpg"
+
+  },
+  {
+    "id":"51",
+    "name1": "Los Angeles",
+    "name2": "Las Vegas",
+    "name3": "New York",
+    "place": "U.S.A",
+    "destination": "U.S.A",
+    "description": "Enjoy to spend the best nights of your life in the U.S.A, do not forget that what happens in Las Vegas, stays in Las Vegas.",
+    "price": 1900,
+    "nameId": "USA",
+    "img": "./assets/img/usa.jpg"
+  },
+  {
+    "id":"52",
+    "name1": "China",
+    "name2": "Singapur",
+    "name3": "Japan",
+    "place": "ASIA",
+    "destination": "Asia",
+    "description": "Travel through the most beautiful countries of the Asian continent and discover its beautiful culture.",
+    "price": 1550,
+    "nameId": "Asia",
+    "img": "./assets/img/asia.jpg"
+  }
+]

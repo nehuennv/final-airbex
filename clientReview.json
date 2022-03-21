@@ -1,0 +1,22 @@
+[
+  {
+    "nameClient": "Andrew Smith",
+    "review": "My experience traveling with airbex was incredible, from the beginning they behaved excellent, as soon as I made my purchase they contacted me to give me the tickets, all safe and fast.",
+    "photo": "./assets/img/clients/julian-wan-WNoLnJo7tS8-unsplash.jpg"
+  },
+  {
+    "nameClient": "Sofia Lozano",
+    "review": "I love the people of airbag and their good treatment with their clients. I wanted to travel to Miami in search of opportunities and the flight was super cheap from Argentina! VIVA AIRBEX Y ARGENTINA C*****!",
+    "photo": "./assets/img/clients/ana-itonishvili-nZ6_RombsA8-unsplash.jpg"
+  },
+  {
+    "nameClient": "Martin Madrazzo",
+    "review": "Excellent airbex as always, I just got back from the spain pack, for personal reasons I had to return earlier and they had no problem returning the money for the remaining days, thanks airbex...",
+    "photo": "./assets/img/clients/cesar-rincon-XHVpWcr5grQ-unsplash.jpg"
+  },
+  {
+    "nameClient": "Emily Hawkins",
+    "review": "I love and always recommend airbex, I met them through my work, where they make me travel a lot, when I traveled with them for the first time I felt much more premium than other companies.",
+    "photo": "./assets/img/clients/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+  }
+]
