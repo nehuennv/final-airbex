@@ -2,7 +2,7 @@ const auth = "563492ad6f91700001000001dda3472c7c2b4eddad776ae06fadf211"
 let favorites = []
 flightsStock = [ ]
 
-let favsLS = JSON.parse(localStorage.getItem("favs"))
+let favsLS = JSON.parse(localStorage.getItem("favs")) || []
 
 function viewFavs(){
   let addFavoritesModal = document.querySelector(".addFavoritesModal")
