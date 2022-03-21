@@ -86,7 +86,7 @@ function crearCards(array){
                 <div class="cardPrice">
                     <p>Form <strong>$${precio}</strong></p>
                     <button id= "buttonFav${id}" >
-                        <img src="../assets/svg/icons/heart_outline.svg" alt="">
+                        <img src="./assets/svg/icons/heart_outline.svg" alt="">
                     <button>
             </div>
 
